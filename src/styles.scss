@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face { 	
+    font-family: "Lora"; 
+    src: url('/assets/fonts/Lora/static/Lora-Bold.ttf');
+}
+
+
+@font-face { 	
+    font-family: "Poppins"; 
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+
+@font-face { 	
+    font-family: "Poppins-Medium"; 
+    src: url('/assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face { 	
+    font-family: "Poppins-semiBold"; 
+    src: url('/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face { 	
+    font-family: "Poppins-Bold"; 
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+
+
+html, body { height: 100%; overflow-x: hidden;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0; 
+    scroll-behavior: smooth;
+    //font-family: Roboto, "Helvetica Neue", sans-serif;
+    
+}
+
+$color_primary:#ebe2bf;
+$color_second: #612840;
+$color_third: #ffc107cc;
+$color_titre: #2F4057;
+$color_sombre: #434B54;
+
+
+.bg_linear {
+    background: linear-gradient(150deg, #FAE0BA 55%, #FFFFFF00 100%);
+
+}
+    
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
