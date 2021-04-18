@@ -46,8 +46,9 @@ header {
         }
     
         .contact {
-            font-family: "Poppins-semiBold";
+            font-family: "Poppins", semi-bold;
             font-size: 16px;
+            font-weight: 600;
             line-height: 25px;
 
             color: white;
@@ -95,7 +96,8 @@ header {
             .enseignement_txt {
                 
                 .enseignement_titre {
-                    font-family: "Lora", Bold !important;
+                    font-family: "Lora" !important;
+                    font-weight: bold;
                     font-size: 44px;
                     line-height: 54px;
                     padding: 5px 5px;
@@ -104,14 +106,16 @@ header {
                 }
 
                 p {
-                    font-family: "Poppins", medium;
+                    font-family: "Poppins", regular;
+                    font-weight: 400;
                     font-size: 18px;
                     line-height: 28px;
                     color: #567592;
                 }
 
                 .ensavoir {
-                    font-family: "Poppins-Bold";
+                    font-family: "Poppins", bold;
+                    font-weight: bold; //700
                     font-size: 16px;
                     line-height: 25px;
 
@@ -145,6 +149,7 @@ header {
 
             .aqui_titre {
                 font-family: "Lora", Bold !important;
+                font-weight: bold;
                 font-size: 36px;
                 line-height: 46px;
                 padding: 5px 21px;
@@ -190,18 +195,19 @@ header {
 
                     h4 {
                         
-                        font-family: "Poppins-semiBold" !important;
+                        font-family: "Poppins", semi-bold !important;
                         font-size: 22px;
-                        columns: $color_titre;
+                        font-weight: 600;
+                        color: $color_titre;
                         margin-top: 30px;
-
                     }
 
                     p {
-                        font-family: "Poppins" !important;
+                        font-family: "Poppins", medium !important;
                         font-size: 16px;
+                        font-weight: 500;
                         line-height: 26px;
-                        columns: $color_sombre;
+                        color: $color_sombre;
                         margin-top: 30px;
                     }
                 }
@@ -210,8 +216,9 @@ header {
             .caminteresse {
                 margin: 60px;
 
-                font-family: "Poppins-semiBold";
+                font-family: "Poppins", semi-bold;
                 font-size: 16px;
+                font-weight: 600;
                 line-height: 25px;
 
                 color: white;
@@ -232,75 +239,82 @@ header {
 
         .apropros_titre {
             font-family: "Lora", Bold !important;
+            font-weight:  bold;
             font-size: 36px;
             line-height: 46px;
-            padding: 5px 5px;
+            padding: 5px 10px;
             text-align: center;
             color: $color_titre
             
         }
 
-        .apropos_txt {
+            .apropos_txt {
 
-            .signification {
-                font-family: "Poppins" !important;
-                font-size: 16px;
-                line-height: 26px;
-                color: $color_sombre;
-                padding: 15px 30px;
-            }
-
-            .apropos_item {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                width: 80%;
-                margin: auto;
-
-                &::before{
-                    position: absolute;
-                    top: 13px;
-                    left: -10px;
-                    content:url(../assets/icon/valide_icon.svg) ;
+                .signification {
+                    font-family: "Poppins", medium !important;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: $color_sombre;
+                    padding: 15px 30px;
                 }
-
-                .mi-check {
-                    position: absolute;
-                    top: 17px;
-                    left: -6px;
-                    color: white;
-                    font-size: 18px;
+    
+                .apropos_item {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    width: 80%;
+                    margin: auto;
+    
+                    &::before{
+                        position: absolute;
+                        top: 13px;
+                        left: -10px;
+                        content:url(../assets/icon/valide_icon.svg) ;
+                    }
+    
+                    .mi-check {
+                        position: absolute;
+                        top: 17px;
+                        left: -6px;
+                        color: white;
+                        font-size: 18px;
+                    }
+                }
+    
+                .apropos_p_bold{
+                    font-family: "Poppins", bold !important;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    color: $color_titre;
+                    margin-top: 10px;
+                    padding: 5px 30px;
+                }
+    
+                .apropos_p {
+                    font-family: "Poppins", medium !important;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    color: $color_sombre;
+                    padding: 10px 0px 0px 30px;
                 }
             }
-
-            .apropos_p_bold{
-                font-family: "Poppins" !important;
-                font-size: 16px;
-                font-weight: bold;
-                color: $color_titre;
-                margin-top: 10px;
-                padding: 5px 30px;
-            }
-
-            .apropos_p {
-                font-family: "Poppins" !important;
-                font-size: 16px;
-                color: $color_sombre;
-                padding: 10px 0px 0px 30px;
-            }
-        }
-
-        .apropos_img {
-            width: 100%;
-            height: 100%;
-            margin-top: 55px;
-
-            img {
+    
+            .apropos_img {
                 width: 100%;
+                height: 100%;
+                margin-top: 55px;
+    
+                img {
+                    width: 100%;
+                }
             }
-        }
+        
+        
     }
     //-- Fin A Propos  --
 
@@ -312,8 +326,9 @@ header {
         .anais_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
+            font-weight: bold;
             line-height: 46px;
-            padding: 5px 5px;
+            padding: 5px 10px;
             text-align: center;
             color: $color_titre; 
         }
@@ -321,8 +336,9 @@ header {
         .anais_txt {
 
             .comsorte {
-                font-family: "Poppins" !important;
+                font-family: "Poppins", medium !important;
                 font-size: 16px;
+                font-weight: 500;
                 line-height: 26px;
                 color: $color_sombre;
                 padding: 15px 30px;
@@ -355,8 +371,9 @@ header {
             }
 
             .anais_p {
-                font-family: "Poppins" !important;
+                font-family: "Poppins", medieum !important;
                 font-size: 14px;
+                font-weight: 500;
                 line-height: 26px;
                 color: $color_sombre;
                 padding: 0px 0px 0px 30px;
@@ -387,24 +404,27 @@ header {
                 margin:  70px auto;
 
                 .chiffre_span {
-                    font-family: "Poppins-Bold" !important;
+                    font-family: "Poppins" !important;
                     font-size: 46px;
+                    font-weight: bold;
                     line-height: 69px;
                     color: $color_second;
                     text-align: left;
                 }
 
                 .chiffre_titre {
-                    font-family: "Poppins-semiBold" !important;
+                    font-family: "Poppins", semi-bold !important;
                     font-size: 22px;
+                    font-weight: 600;
                     line-height: 33px;
                     color: $color_titre;
                     text-align: left;
                 }
 
                 p {
-                    font-family: "Poppins-semiBold" !important;
+                    font-family: "Poppins", medium !important;
                     font-size: 16px;
+                    font-weight: 500;
                     line-height: 26px;
                     color: $color_sombre;
                     text-align: left;
@@ -441,6 +461,7 @@ header {
         .formule_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
+            font-weight: bold;
             line-height: 46px;
             padding: 5px 5px;
             text-align: center;
@@ -458,8 +479,9 @@ header {
                 align-items: center;
 
                 h4 {
-                    font-family: "Poppins-semiBold" !important;
+                    font-family: "Poppins", semi-bold !important;
                     font-size: 22px;
+                    font-weight: 600;
                     line-height: 33px;
                     text-align: center;
                     color: $color_titre;
@@ -573,7 +595,7 @@ header {
                     text-align: left;
                     color: $color_sombre;
                     position: relative;
-                    padding: 0px 0px 10px 0p;
+                    padding: 0px 0px 10px 0px;
 
                     &::before{
                         position: absolute;
@@ -598,6 +620,7 @@ header {
         .faq_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
+            font-weight: bold;
             line-height: 46px;
             padding: 5px 5px;
             text-align: center;
@@ -621,8 +644,9 @@ header {
 
                 h5 {
                     margin: 0;
-                    font-family: "Poppins-Bold" !important;
+                    font-family: "Poppins", bold !important;
                     font-size: 16px;
+                    font-weight: bold;
                     line-height: 26px;
                     color: $color_sombre;
                     text-align: left;
@@ -662,8 +686,9 @@ header {
                 
                 p {
 
-                    font-family: "Poppins-Medium" !important;
+                    font-family: "Poppins", medium !important;
                     font-size: 14px;
+                    font-weight: 500;
                     line-height: 26px;
                     color: $color_sombre;
                     text-align: left;
@@ -753,15 +778,16 @@ header {
                 .formation_titre {
                     font-family: "Lora", Bold !important;
                     font-size: 36px;
-                    line-height: 46px;
+                    font-weight: bold;                    line-height: 46px;
                     padding: 5px 5px;
                     color: $color_titre;
                     text-align: center;
                 }
 
                 p {
-                    font-family: "Poppins-Medium", medium;
+                    font-family: "Poppins", medium;
                     font-size: 16px;
+                    font-weight: 500;
                     line-height: 26px;
                     color: $color_sombre;
                     margin: 40px 0;
@@ -769,8 +795,9 @@ header {
                 }
 
                 .contacter {
-                    font-family: "Poppins-Bold";
+                    font-family: "Poppins", bold;
                     font-size: 16px;
+                    font-weight: bold;
                     line-height: 25px;
 
                     color: white;
@@ -785,6 +812,7 @@ header {
                 width: 100%;
                 height: 100%;
                 margin-top: 55px;     
+                margin-bottom: 40px;
 
                 display: flex;
                 justify-content: center;
@@ -807,6 +835,7 @@ header {
             .contactez_titre {
                 font-family: "Lora", Bold !important;
                 font-size: 36px;
+                font-weight: bold;
                 line-height: 46px;
                 padding: 5px 5px;
                 color: $color_titre;
@@ -814,8 +843,9 @@ header {
             }
 
             p {
-                font-family: "Poppins-Medium", medium;
+                font-family: "Poppins", medium;
                 font-size: 16px;
+                font-weight: 500;
                 line-height: 26px;
                 color: $color_sombre;
                 margin: 30px 0;
@@ -851,8 +881,9 @@ header {
                     }
 
                     p {
-                        font-family: "Poppins-semiBold";
+                        font-family: "Poppins", semi-bold;
                         font-size: 15px;
+                        font-weight: 600;
                         line-height: 23px;
                         margin: 0 !important;
 
@@ -885,8 +916,9 @@ footer {
             li {
                 color: white;
 
-                font-family: "Poppins-semiBold" !important;
+                font-family: "Poppins", semi-bold !important;
                 font-size: 14px;
+                font-weight: 600;
                 line-height: 28px;
                 text-align: left;
                 color: white;
@@ -911,6 +943,14 @@ footer {
     }
 }
 
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 @media all and (max-width:980px) {
         
     
@@ -923,6 +963,14 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
 
     .haut {
         .ovale {
@@ -964,6 +1012,39 @@ footer {
                 justify-content: space-around;
                 align-items: center;
             }
+        }
+    }
+
+    .apropos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .apropos_conteneur {
+            width: 50% !important;
+            height: 100% !important;
+            margin: 0 !important;
+        }
+
+        .apropros_titre {
+            text-align: left !important;
+            padding: 0px !important;
+        } 
+
+        .signification {
+            padding: 15px 30px 15px 0px !important;
+        }
+
+        .apropos_img {
+            //max-width: 540px !important;
+            width: 50% !important;
+            height: 100% !important;
+            margin: 0 !important;
+        }
+
+        .apropos_item {
+            margin: 0px !important;
         }
     }
 }
