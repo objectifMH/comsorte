@@ -70,7 +70,7 @@ header {
 .haut {
     
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
 
     .ovale {
@@ -387,73 +387,72 @@ header {
             margin-top: 55px;          
             margin-bottom: 70px;
 
-            display: flex;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
 
             img {
                 width: 80%;
             }
         }
 
-        //-- Chiffres --
-        .chiffres_conteneur_item {
-            margin-top: 60px;
-
-            .chiffre_item {
-                max-width: 237px;
-                margin:  70px auto;
-
-                .chiffre_span {
-                    font-family: "Poppins" !important;
-                    font-size: 46px;
-                    font-weight: bold;
-                    line-height: 69px;
-                    color: $color_second;
-                    text-align: left;
-                }
-
-                .chiffre_titre {
-                    font-family: "Poppins", semi-bold !important;
-                    font-size: 22px;
-                    font-weight: 600;
-                    line-height: 33px;
-                    color: $color_titre;
-                    text-align: left;
-                }
-
-                p {
-                    font-family: "Poppins", medium !important;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 26px;
-                    color: $color_sombre;
-                    text-align: left;
-
-                    margin-top: 18px;
-                }
-            }
-        }
-        //-- Fin Chiffres --
-
-        //-- Drapeaux --
-        .drapeaux_conteneur {
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 80%;
-
-
-            img {
-                width: 43px;
-                height: 43px;
-            }
-        }
-        //-- Fin Drapeaux --
-
-
     }
     //-- Fin Anais --
+
+    //-- Chiffres --
+    .chiffres_conteneur_item {
+        margin-top: 60px;
+
+        .chiffre_item {
+            max-width: 237px;
+            margin:  70px auto;
+
+            .chiffre_span {
+                font-family: "Poppins" !important;
+                font-size: 46px;
+                font-weight: bold;
+                line-height: 69px;
+                color: $color_second;
+                text-align: left;
+            }
+
+            .chiffre_titre {
+                font-family: "Poppins", semi-bold !important;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 33px;
+                color: $color_titre;
+                text-align: left;
+            }
+
+            p {
+                font-family: "Poppins", medium !important;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 26px;
+                color: $color_sombre;
+                text-align: left;
+
+                margin-top: 18px;
+            }
+        }
+    }
+    //-- Fin Chiffres --
+
+    //-- Drapeaux --
+    .drapeaux_conteneur {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+
+        img {
+            width: 43px;
+            height: 43px;
+        }
+    }
+    //-- Fin Drapeaux --
 
     //-- Formules et tarifs --
     .formules {
@@ -726,9 +725,6 @@ header {
             margin-top: 55px;          
             margin-bottom: 70px;
 
-            display: flex;
-            justify-content: center;
-
             img {
                 width: 80%;
             }
@@ -974,8 +970,7 @@ footer {
 
     .haut {
         .ovale {
-            height: 1200px !important;
-            
+            height: 1200px !important;      
         }
     }
 
@@ -1006,11 +1001,22 @@ footer {
 
         .aqui { 
 
+            .aqui_titre {
+                max-width: 540px;
+            }
+
             .aqui_conteneur_item {
-                display: flex;
+                display: flex !important;
                 flex-direction: row !important;
-                justify-content: space-around;
-                align-items: center;
+                justify-content: space-between !important;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .aqui_item {
+                    p {
+                        max-height: 105px;
+                    }
+                }
             }
         }
     }
@@ -1047,6 +1053,117 @@ footer {
             margin: 0px !important;
         }
     }
+
+    .anais {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .anais_conteneur {
+            width: 50% !important;
+            height: 100% !important;
+            margin: 0 !important;
+        }
+
+        .anais_titre {
+            text-align: left !important;
+            padding: 0px !important;
+        } 
+
+        .comsorte {
+            padding: 15px 30px 15px 0px !important;
+        }
+
+        .anais_img {
+            width: 50% !important;
+            height: 100% !important;
+            margin: 0 !important;
+        }
+
+        .anais_item {
+            margin: 0px !important;
+        }
+    }
+    
+    .chiffres_conteneur_item {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .chiffre_item {
+            p {
+                min-height: 100px;
+            }
+        }
+    }
+
+    .drapeaux_conteneur {
+        width: 60% !important;
+    }
+
+    .formules {
+        .formule_conteneur {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+
+            .formule_description {
+                max-width: 355px !important;
+            }
+
+        }
+    }
+    
+    .faq {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .faq_conteneur {
+            width: 50% !important;
+            height: 100% !important;
+            margin: 0 !important;
+        }
+
+        .faq_titre {
+            text-align: left !important;
+            padding: 0px !important;
+        } 
+
+        .faq_bas {
+            .panel {
+                p {
+                    max-width: 480px;
+                }
+            }
+        }
+
+        .faq_img.desktop{
+            width: 50% !important;
+            height: 100% !important;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 70% !important;
+            }
+        }
+    }
+
+    .contactez {
+        .contactez_conteneur_item {
+            display: flex !important;
+            flex-direction: row !important;
+            width: 100%;
+        }
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) {
