@@ -3,36 +3,27 @@
   <nav class="container nav_header">
 
     <!-- Logo  -->
-    <div class="logo">
+    <a [routerLink]="['/main']" fragment="id_haut" class="logo">
       <img src="assets/Logo/logocomsorte@2x.png">
-    </div>
+    </a>
 
     <div class="langue">
       
 
       <form [formGroup]="langueForm">
         <select formControlName="countryControl">
-          <option style="background:url('assets/icon/france.svg') no-repeat; width:100px; height:100px;" value="FR" >
-
-
-            FR </option>
+          <option style="background:url('assets/icon/france.svg') no-repeat; width:100px; height:100px;" value="FR" >FR </option>
           <option value="BR" ><img src="assets/icon/brazil.svg"> BR </option>
           <option style="background-image:url(assets/icon/brazil.svg)" value="BR">Bra</option>
           <option class="brazil_flag" value="PR" > PR </option>
-
-          <option value="PR" >
-            <a>
-              <img src="../assets/icon/england.svg"> EN
-            </a>
-          </option>
         </select>
        </form>
 
     </div>
 
-    <button class="contact">
+    <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
       Contact
-    </button>
+    </a>
 
   </nav>
 </header>
@@ -40,7 +31,7 @@
 
 
 <!-- Haut  -->
-<section class="haut ">
+<section class="haut" id="id_haut">
 
 
   <!-- Svg Ovale  -->
@@ -127,9 +118,9 @@
 
       </div>
 
-      <button class="caminteresse">
+      <a [routerLink]="['/main']" fragment="footer" class="caminteresse">
         Ça m'intéresse
-      </button>
+      </a>
 
     </div>
 
@@ -588,9 +579,9 @@
         <p>
           Bénéficiez d’une remise à niveau rapide et efficace !
         </p>
-        <button class="contacter">
+        <a [routerLink]="['/main']" fragment="id_contactez"class="contacter">
           Contactez Anaïs
-        </button>
+        </a>
       </div>
 
       <div class="formation_img">
@@ -599,7 +590,8 @@
 
     </div>
 
-    <div class="contactez">
+    <div id="id_contactez">
+      <div class="contactez" >
 
         <div class="contactez_titre">
           Contactez Anais
@@ -633,6 +625,7 @@
         </div>
 
 
+      </div>
     </div>
 
   </section>
@@ -642,7 +635,7 @@
 <!-- FIN Bas  -->
 
 <!--  FOOTER  -->
-<footer>
+<footer id="footer">
   <div class="footer_conteneur">
     <ul class="footer_ul">
       <li>

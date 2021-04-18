@@ -61,10 +61,15 @@ header {
     }   
 }
 
+
+#id_haut {
+    padding-top: 100px;
+}
+
 .haut {
     
-    margin-top: 100px;
     position: relative;
+    overflow-x: hidden;
 
 
     .ovale {
@@ -714,6 +719,7 @@ header {
     
     margin-top: 100px;
     position: relative;
+    overflow-x: hidden;
 
 
     .ovale_bas {
@@ -778,13 +784,16 @@ header {
             .formation_img {
                 width: 100%;
                 height: 100%;
-                margin-top: 55px;          
-                margin-bottom: 70px;
+                margin-top: 55px;     
 
                 display: flex;
                 justify-content: center;
 
             }
+        }
+
+        #id_contactez {
+            padding-top: 100px;
         }
 
         .contactez {
