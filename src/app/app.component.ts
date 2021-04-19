@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +16,11 @@ export class AppComponent {
 
 
   ngOnInit() {
+    
+    AOS.init();
     this.langueForm = this.fb.group({
       countryControl: ['FR']
     });
   }
+
 }
