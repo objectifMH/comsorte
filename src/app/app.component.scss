@@ -588,9 +588,7 @@ header {
                         content:url(../assets/icon/Rectangle_8.svg) ;
                     }
                 }
-
                 
-
                 .formule_description {
                     font-family: "Poppins" !important;
                     font-size: 18px;
@@ -606,8 +604,7 @@ header {
                     margin: 10px 0 0 0 !important;
                     padding: 0 !important;
                 }
-
-                
+               
                 li {
                     display: flex;
                     flex-direction: row;
@@ -623,7 +620,16 @@ header {
                         margin-left: 15px;
                         max-width: 290px;
                     }
-                }         
+                }  
+                
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.035);
+                    border-radius: 5px;
+                    box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.16);
+                }
             }
         }
     }
