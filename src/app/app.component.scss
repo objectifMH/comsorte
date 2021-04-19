@@ -1,5 +1,15 @@
 @import '../styles.scss';
 
+a {
+    transition: all .4s ease-in-out;
+
+            &:hover {
+                //background: yellow !important;
+                letter-spacing: 1px;
+            }
+
+}
+
 header {
     background-color: #FFFF;
     display: flex;
@@ -132,6 +142,7 @@ header {
                     padding: 12px 24px;
                     border-radius: 5px;   
 
+                    display: inline-block;
                     margin-top: 20px;
                 }
             }
