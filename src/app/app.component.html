@@ -7,9 +7,8 @@
       <img src="assets/Logo/logocomsorte@2x.png">
     </a>
 
-    <div class="langue">
+    <!-- <div class="langue">
       
-
       <form [formGroup]="langueForm">
         <select formControlName="countryControl">
           <option style="background:url('assets/icon/france.svg') no-repeat; width:100px; height:100px;" value="FR" >FR </option>
@@ -19,16 +18,52 @@
         </select>
        </form>
 
-    </div>
+    </div> -->
 
-    <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+    <ul class="ul_menu header_menu_desktop">
+      <li>
+        <a  [routerLink]="['/main']" fragment="id_haut">
+          Accueil
+        </a>
+      </li>
+      <li>
+        <a  [routerLink]="['/main']" fragment="id_apropos">
+          À propos
+        </a>
+      </li>
+      <li>
+        <a  [routerLink]="['/main']" fragment="id_anais">
+          Votre formatrice
+        </a>
+      </li>
+      <li>
+        <a  [routerLink]="['/main']" fragment="id_bas">
+          Témoignages
+        </a>
+      </li>
+      <li>
+        <a  [routerLink]="['/main']" fragment="id_faq">
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/main']" fragment="id_formules" class="formules">
+          Formules
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <a [routerLink]="['/main']" fragment="id_contactez" class="contact header_menu_mobile">
       Contact
     </a>
 
   </nav>
 </header>
 <!-- FIN HEADER  -->
-
 
 <!-- Haut  -->
 <section class="haut" id="id_haut">
@@ -129,7 +164,7 @@
 
 
   <!-- A propos  -->
-  <section class="apropos container"> 
+  <section class="apropos container" id="id_apropos"> 
     <div class="apropos_conteneur">
       <div class="apropros_titre">
         À propos de Com'Sorte
@@ -139,7 +174,6 @@
         <img src="assets/Photos/photo2.png" >
       </div>
   
-      
       <div class="apropos_txt">
         <p class="signification">
           Com Sorte” en portugais signifie “Chanceux(se)/ qui a de la chance”. Anaïs vous accompagne de façon efficace dans l’apprentissage du FLE pour répondre au mieux à vos attentes!
@@ -205,7 +239,7 @@
   <!-- Fin A Propos  -->
 
   <!-- Anais  -->
-  <section class="anais container"> 
+  <section class="anais container" id="id_anais"> 
 
     <div class="anais_img desktop">
       <img src="assets/Photos/photo3.png" >
@@ -277,7 +311,7 @@
   <!-- Fin Anais  -->
 
   <!-- Chiffres -->
-  <div class="chiffres_conteneur_item">
+  <div class="chiffres_conteneur_item container">
 
     <div class="chiffre_item">
       <span class="chiffre_span">
@@ -308,7 +342,7 @@
         +20
       </span>
       <div class="chiffre_titre">
-        Années à l’étranger
+        Élèves
       </div>
       <p>
         De tout âges et de différentes nationalités
@@ -329,7 +363,7 @@
   <!-- Fin Drapeaux -->
 
   <!-- Formules et tarifs -->
-  <section class="formules container">
+  <section class="formules container" id="id_formules">
 
     <div class="formule_titre">
       Formules et tarifs
@@ -355,16 +389,28 @@
         </div>
         <ul class="formule_ul">
           <li>
-            1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            <img src="assets/icon/check.svg">
+            <p>
+              1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            </p>
           </li>
           <li>
-            En présentiel ou à distance en visio
+            <img src="assets/icon/check.svg">
+            <p>
+              En présentiel ou à distance en visio
+            </p>
           </li>
           <li>
-            Possibilité aussi les soirs, jours fériés ou le samedi
+            <img src="assets/icon/check.svg">
+            <p>
+              Possibilité aussi les soirs, jours fériés ou le samedi
+            </p>
           </li>
           <li>
-            Assistance aux devoirs sur demande
+            <img src="assets/icon/check.svg">
+            <p>
+              Assistance aux devoirs sur demande
+            </p>
           </li>
         </ul>
       </div>
@@ -387,16 +433,28 @@
         </div>
         <ul class="formule_ul">
           <li>
-            1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            <img src="assets/icon/check.svg">
+            <p>
+              1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            </p>
           </li>
           <li>
-            En présentiel ou à distance en visio
+            <img src="assets/icon/check.svg">
+            <p>
+              En présentiel ou à distance en visio
+            </p>
           </li>
           <li>
-            Possibilité aussi les soirs, jours fériés ou le samedi
+            <img src="assets/icon/check.svg">
+            <p>
+              Possibilité aussi les soirs, jours fériés ou le samedi
+            </p>
           </li>
           <li>
-            Assistance aux devoirs sur demande
+            <img src="assets/icon/check.svg">
+            <p>
+              Assistance aux devoirs sur demande
+            </p>
           </li>
         </ul>        
       </div>
@@ -417,18 +475,30 @@
         <div class="formule_description">
           Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>
         </div>
-        <ul class=" formule_ul ul_sal">
+        <ul class=" formule_ul">
           <li>
-            1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            <img src="assets/icon/check_sal.svg">
+            <p>
+              1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
+            </p>
           </li>
           <li>
-            En présentiel ou à distance en visio
+            <img src="assets/icon/check_sal.svg">
+            <p>
+              En présentiel ou à distance en visio
+            </p>
           </li>
           <li>
-            Possibilité aussi les soirs, jours fériés ou le samedi
+            <img src="assets/icon/check_sal.svg">
+            <p>
+              Possibilité aussi les soirs, jours fériés ou le samedi
+            </p>
           </li>
           <li>
-            Assistance aux devoirs sur demande
+            <img src="assets/icon/check_sal.svg">
+            <p>
+              Assistance aux devoirs sur demande
+            </p>
           </li>
         </ul>
       </div>
@@ -439,7 +509,7 @@
    <!-- Fin Formules et tarifs -->
 
    <!--  Faq  -->
-   <section class="faq container">
+   <section class="faq container" id="id_faq">
 
     <div class="faq_conteneur">
       <div class="faq_titre">
@@ -574,13 +644,17 @@
 
 
   <!-- Bas_conteneur  -->
-  <section class="bas_conteneur">
+  <section class="bas_conteneur" id="id_bas">
 
-    <div class="formation">
+    <div class="formation container" id="id_formation">
 
-      <div class="formation_img">
+      <img src="assets/avis/avis1.png" class="avis_1">
+
+      <img src="assets/avis/avis2.png" class="avis_2 desktop">
+
+      <!-- <div class="formation_img">
         <img src="assets/avis/Avis1.png" >
-      </div>
+      </div> -->
 
       <div class="formation_txt">
         <div class="formation_titre">
@@ -594,9 +668,15 @@
         </a>
       </div>
 
-      <div class="formation_img">
+      <img src="assets/avis/avis3.png" class="avis_3">
+
+      <img src="assets/avis/avis4.png" class="avis_4 desktop">
+
+      <img src="assets/avis/avis5.png" class="avis_5 desktop">
+
+      <!-- <div class="formation_img">
         <img src="assets/avis/avis3.png" >
-      </div>
+      </div> -->
 
     </div>
 
@@ -646,38 +726,112 @@
 
 <!--  FOOTER  -->
 <footer id="footer">
-  <div class="footer_conteneur">
+  <div class="footer_conteneur footer_mobile">
     <ul class="footer_ul">
       <li>
-        Accueil
+        <a  [routerLink]="['/main']" fragment="id_haut">
+          Accueil
+        </a>
       </li>
       <li>
-        Pour qui ?
+        <a  [routerLink]="['/main']" fragment="id_haut">
+          Pour qui ?
+        </a>
       </li>
       <li>
-        À propos
+        <a  [routerLink]="['/main']" fragment="id_apropos">
+          À propos
+        </a>
       </li>
       <li>
-        Votre professeur 
+        <a  [routerLink]="['/main']" fragment="id_anais">
+          Votre professeur 
+        </a>
       </li>
       <li>
-        Témoignages
+        <a  [routerLink]="['/main']" fragment="id_bas">
+          Témoignages
+        </a>     
       </li>
       <li>
-        FAQ
+        <a  [routerLink]="['/main']" fragment="id_faq">
+          FAQ
+        </a>      
       </li>
       <li>
-        Formules
+        <a  [routerLink]="['/main']" fragment="id_formules">
+          Formules
+        </a>   
       </li>
       <li>
-        Contact
+        <a  [routerLink]="['/main']" fragment="id_contactez">
+          Contact
+        </a>  
       </li>
     </ul>
+    <a  [routerLink]="['/main']" fragment="id_haut">
+      <img src="assets/Logo/logoblanc_comsorte.svg">
+    </a>
+  </div>
 
-    <img src="assets/Logo/logoblanc_comsorte.svg">
+  <div class="footer_conteneur footer_desktop">
+    
+    <a  [routerLink]="['/main']" fragment="id_haut"> 
+      <img src="assets/Logo/logoblanc_comsorte.svg" class="footer_img_desktop">
+    </a>
+    <ul class="footer_ul">
+      <li>
+        <p>
+          <a  [routerLink]="['/main']" fragment="id_haut">
+            Accueil
+          </a>
+        </p>
+        <p>
+          <a  [routerLink]="['/main']" fragment="id_haut">
+            Pour qui ?
+          </a>
+        </p>
+        <p>
+          <a  [routerLink]="['/main']" fragment="id_apropos">
+            À propos
+          </a>
+        </p>  
+      </li>
+      <li>
+        <p>  
+          <a  [routerLink]="['/main']" fragment="id_anais">
+            Votre Professeur
+          </a>
+        </p>
+        <p>
+          <a  [routerLink]="['/main']" fragment="id_bas">
+            Témoignages
+          </a>
+        </p>
+        <p>
+          <a  [routerLink]="['/main']" fragment="id_faq">
+            FAQ
+          </a>
+        </p>
+      </li>
+      <li>
+        <p>
+          <a [routerLink]="['/main']" fragment="id_formules" class="formules">
+            Formules
+          </a>
+        </p>
+        <p>
+          <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+            Contact
+          </a>
+        </p>
+      </li>
+     
+    </ul>
+
 
   </div>
-  <div class="mentions">
+  <div class="mentions ">
     <span>Mentions légales</span>
     <span>Politique de confidentialité</span>
   </div>

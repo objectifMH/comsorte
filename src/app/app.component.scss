@@ -51,7 +51,7 @@ header {
             font-weight: 600;
             line-height: 25px;
 
-            color: white;
+            color: white !important;
 
             background: $color_second;
             padding: 9px 18px;
@@ -59,12 +59,20 @@ header {
             
             text-align: left;
         }
+
+        .header_menu_mobile {
+            display: flex;
+        }
+    
+        .header_menu_desktop {
+            display: none;
+        }
     }   
 }
 
 
 #id_haut {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .haut {
@@ -72,9 +80,7 @@ header {
     position: relative;
     overflow: hidden;
 
-
     .ovale {
-        //height: 4200px;
         height: 50%;
         width: 350%;
         margin: 0 auto;
@@ -91,16 +97,15 @@ header {
 
         .enseignement {
 
-            padding: 32px 28px;
-
             .enseignement_txt {
                 
                 .enseignement_titre {
                     font-family: "Lora" !important;
                     font-weight: bold;
                     font-size: 44px;
+                    max-width: 530px;
                     line-height: 54px;
-                    padding: 5px 5px;
+                    padding: 0 !important;
                     color: $color_titre;
                     text-align: left;
                 }
@@ -108,6 +113,8 @@ header {
                 p {
                     font-family: "Poppins", regular;
                     font-weight: 400;
+                    
+                    max-width: 480px;
                     font-size: 18px;
                     line-height: 28px;
                     color: #567592;
@@ -152,10 +159,10 @@ header {
                 font-weight: bold;
                 font-size: 36px;
                 line-height: 46px;
-                padding: 5px 21px;
+                //padding: 5px 21px;
+                max-width: 345px;
                 text-align: center;
-                color: rgb(47 64 87);
-                
+                color: rgb(47 64 87);              
             }
 
             .aqui_conteneur_item {
@@ -193,8 +200,7 @@ header {
                     }
                     
 
-                    h4 {
-                        
+                    h4 {                     
                         font-family: "Poppins", semi-bold !important;
                         font-size: 22px;
                         font-weight: 600;
@@ -209,6 +215,7 @@ header {
                         line-height: 26px;
                         color: $color_sombre;
                         margin-top: 30px;
+                        min-height: 105px;
                     }
                 }
             }
@@ -230,22 +237,26 @@ header {
                 text-align: left;
             }
         }
-
     }
 
     //-- A propos  --
+
+    #id_apropos {
+        padding-top: 90px;
+    }
+
     .apropos {
-        margin-top: 90px;
+        //margin-top: 90px;
 
         .apropros_titre {
             font-family: "Lora", Bold !important;
             font-weight:  bold;
             font-size: 36px;
             line-height: 46px;
-            padding: 5px 10px;
+            //padding: 5px 10px;
+            max-width: 345px;
             text-align: center;
-            color: $color_titre
-            
+            color: $color_titre           
         }
 
             .apropos_txt {
@@ -319,16 +330,20 @@ header {
     //-- Fin A Propos  --
 
     //-- Anais --
+    #id_anais {
+        padding-top: 40px;
+    }
     .anais {
 
-        margin-top: 40px;
+        //margin-top: 40px;
 
         .anais_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
             font-weight: bold;
             line-height: 46px;
-            padding: 5px 10px;
+            max-width: 345px;
+            //padding: 5px 10px;
             text-align: center;
             color: $color_titre; 
         }
@@ -455,14 +470,17 @@ header {
     //-- Fin Drapeaux --
 
     //-- Formules et tarifs --
+    #id_formules {
+        padding-top: 90px;
+    }
+
     .formules {
-        margin-top: 90px;
+        //margin-top: 90px;
         .formule_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
             font-weight: bold;
             line-height: 46px;
-            padding: 5px 5px;
             text-align: center;
             color: $color_titre
         }
@@ -490,8 +508,7 @@ header {
                     font-family: "Poppins" !important;
                     font-size: 62px;
                     line-height: 93px;
-                    text-align: center;
-                    
+                    text-align: center;             
                 }
 
                 .ind {
@@ -572,56 +589,47 @@ header {
 
                 .formule_ul {
                     list-style:none;
-                    margin-left: 40px;
+                    margin: 10px 0 0 0 !important;
+                    padding: 0 !important;
                 }
 
-                .ul_sal {
-                    li {
-                        &::before{
-                            position: absolute;
-                            top: 0px;
-                            left: -30px;
-                            z-index: -1;
-                            content:url(../assets/icon/check_sal.svg) ;
-                        }
-                    }
-                }
-
-                li {
-                    font-family: "Poppins" !important;
-                    font-size: 14px;
-                    line-height: 39px;
-                    text-align: left;
-                    color: $color_sombre;
-                    position: relative;
-                    padding: 0px 0px 10px 0px;
-
-                    &::before{
-                        position: absolute;
-                        top: 0px;
-                        left: -30px;
-                        z-index: -1;
-                        content:url(../assets/icon/check.svg) ;
-                    }
-
-                }
                 
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    
+                    p {
+                        font-family: "Poppins" !important;
+                        font-size: 14px;
+                        line-height: 39px;
+                        text-align: left;
+                        color: $color_sombre;
+                        position: relative;
+                        margin-left: 15px;
+                        max-width: 290px;
+                    }
+                }         
             }
         }
-
     }
     //-- Fin Formules et tarifs --
 
     //-- Faq --
+    #id_faq {
+        padding-top: 90px;
+    }
+
     .faq {
-        margin-top: 90px;
+        //margin-top: 90px;
 
         .faq_titre {
             font-family: "Lora", Bold !important;
             font-size: 36px;
             font-weight: bold;
             line-height: 46px;
-            padding: 5px 5px;
+            max-width: 345px;
+            //padding: 5px 5px;
             text-align: center;
             color: $color_titre
         }
@@ -693,7 +701,6 @@ header {
                     text-align: left;
                     padding: 1rem .8rem;
                     transition: .5s ease-in-out;
-
                 }
             }   
             
@@ -707,7 +714,7 @@ header {
             
                 ~ .panel {   
                     opacity: 1; 
-                    max-height: calc(200px);
+                    max-height: calc(350px);
                 }
 
                 ~ .accordion {
@@ -729,16 +736,18 @@ header {
                 width: 80%;
             }
         }
-
-    }
-    
+    } 
     //-- Fin faq --
 
 }
 
+//--  bas  --
+#id_bas {
+    padding-top: 90px;
+}
+
 .bas {
     
-    margin-top: 100px;
     position: relative;
     overflow-x: hidden;
 
@@ -760,9 +769,13 @@ header {
         top: 0;
         width: 100%;
 
+        #id_formation {
+            
+        }
+
         .formation {
 
-            padding: 32px 28px;
+            padding: 52px 28px;
 
             .formation_txt {
 
@@ -774,8 +787,9 @@ header {
                 .formation_titre {
                     font-family: "Lora", Bold !important;
                     font-size: 36px;
-                    font-weight: bold;                    line-height: 46px;
-                    padding: 5px 5px;
+                    font-weight: bold;
+                    line-height: 46px;
+                    max-width: 600px;
                     color: $color_titre;
                     text-align: center;
                 }
@@ -804,14 +818,9 @@ header {
                 }
             }
 
-            .formation_img {
-                width: 100%;
-                height: 100%;
-                margin-top: 55px;     
-                margin-bottom: 40px;
-
-                display: flex;
-                justify-content: center;
+            img {
+                width:100%;
+                margin: 45px 5px;
 
             }
         }
@@ -853,6 +862,7 @@ header {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                flex-wrap: wrap;
 
                 .contactez_item {
 
@@ -890,15 +900,23 @@ header {
         }
     }
 }
+//--  Fin bas  --
 
+//--  footer  --
 footer {
     background-color: $color_titre;
     padding: 50px 15px;
     
+    .footer_mobile {
+        display: flex;
+    }
+
+    .footer_desktop {
+        display: none;
+    }
 
     .footer_conteneur {
 
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
@@ -910,14 +928,14 @@ footer {
             padding: 0 !important;
 
             li {
-                color: white;
-
-                font-family: "Poppins", semi-bold !important;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 28px;
-                text-align: left;
-                color: white;
+                a{
+                    font-family: "Poppins", semi-bold !important;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    text-align: left;
+                    color: white;
+                }
 
                 margin-bottom: 5px;
             }
@@ -938,34 +956,40 @@ footer {
         }
     }
 }
+//--  Fin footer  --
+
 
 .mobile {
-    display: block;
+    display: block ;
 }
 
 .desktop {
-    display: none;
+    display: none ;
 }
 
-@media all and (max-width:980px) {
-        
+@media all and (max-width:980px) { 
     
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 425px) {
+    .enseignement {
+        padding: 32px 28px;
 
-
+        .enseignement_titre {
+            padding: 5px 15px;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
 
 
     .mobile {
-        display: none;
+        display: none ;
     }
 
     .desktop {
-        display: block;
+        display: block ;
     }
 
     .haut {
@@ -996,13 +1020,12 @@ footer {
                     max-width: 520px;
                 }
             }
-
         }
 
         .aqui { 
 
             .aqui_titre {
-                max-width: 540px;
+                max-width: 540px !important;
             }
 
             .aqui_conteneur_item {
@@ -1036,6 +1059,7 @@ footer {
         .apropros_titre {
             text-align: left !important;
             padding: 0px !important;
+            max-width: 540px !important;
         } 
 
         .signification {
@@ -1069,6 +1093,7 @@ footer {
         .anais_titre {
             text-align: left !important;
             padding: 0px !important;
+            max-width: 540px !important;
         } 
 
         .comsorte {
@@ -1145,7 +1170,7 @@ footer {
 
         .faq_img.desktop{
             width: 50% !important;
-            height: 100% !important;
+            //height: 100% !important;
             display: flex;
             justify-content: center;
 
@@ -1153,6 +1178,46 @@ footer {
                 width: 70% !important;
             }
         }
+    }
+
+    .formation {
+        position: relative;
+        padding: 190px 28px !important;
+        .avis_1 {
+            position: absolute;
+            width: 40% !important;
+            top: 0;
+            left: 5px;
+        }
+
+        .avis_2 {
+            position: absolute;
+            width: 40% !important;
+            top: 0;
+            right: 5px;
+        }
+
+        .avis_3 {
+            position: absolute;
+            width: 35% !important;
+            bottom: 200px;
+            left: 0px;
+        }
+
+        .avis_4 {
+            position: absolute;
+            width: 35% !important;
+            bottom: 210px;
+            right: 0px;
+        }
+
+        .avis_5 {
+            position: relative;
+            width: 45% !important;
+            margin: auto !important;
+            bottom: -120px;
+        }
+
     }
 
     .contactez {
@@ -1163,10 +1228,94 @@ footer {
         }
     }
 
+    footer {
+        padding: 50px 15px 5px;
 
+        .footer_mobile {
+            display: none;
+        }
+    
+        .footer_desktop {
+            display: flex;
+        }
+
+        .footer_conteneur {
+            
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+            position: relative;
+            
+            .footer_img_desktop {
+                position: absolute;
+                left: 10%;
+            }
+
+            .footer_ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: baseline;
+                width: 400px !important;
+            }
+        }
+
+        .mentions {
+            width: 400px;
+            margin: 40px auto;
+        }
+    }
 }
 
-@media screen and (min-width: 1024px) {
-  
-  
+@media screen and (min-width: 1235px) {
+
+    .header_menu_mobile {
+        display: none !important;
+    }
+
+    .header_menu_desktop {
+        display: flex !important;
+    }
+    
+    header {
+        .ul_menu {
+            flex-direction: row;
+            
+            justify-content: flex-end;
+            align-items: center;
+
+            text-decoration: none;
+            list-style: none;
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+            li {
+                margin-left: 20px;
+                a {
+                    font-family: "Poppins", regular;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $color_titre;
+                }
+            }
+        }
+
+        .formules {
+            font-family: "Poppins", semi-bold;
+            font-size: 16px;
+            font-weight: 600 !important;
+            line-height: 25px;
+
+            color: $color_second !important;
+
+            background: white;
+            padding: 9px 18px;
+            border: 1px solid $color_second ;
+            border-radius: 5px;  
+            
+            text-align: left;
+        }
+    }
 }
