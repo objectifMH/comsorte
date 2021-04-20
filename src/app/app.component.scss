@@ -5,11 +5,9 @@ a {
 
             &:hover {
                 letter-spacing: .5px;
-                font-weight: 700;
+                font-weight: 700 !important;
             }
 }
-
-
 
 
 
@@ -109,6 +107,7 @@ header {
         width: 100%;
 
         .enseignement {
+            padding: 10px 8px;
 
             .enseignement_txt {
                 
@@ -442,6 +441,9 @@ header {
                 line-height: 69px;
                 color: $color_second;
                 text-align: left;
+
+                transition: all .7s ease-in-out;
+
             }
 
             .chiffre_titre {
@@ -462,6 +464,15 @@ header {
                 text-align: left;
 
                 margin-top: 18px;
+            }
+
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                .chiffre_span {  
+                    font-size: 56px;
+                }
             }
         }
     }
@@ -1062,6 +1073,15 @@ footer {
                 .aqui_item {
                     p {
                         max-height: 105px;
+                    }
+
+                    transition: all .5s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.035);
+                        border-radius: 5px;
+                        box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.16);
                     }
                 }
             }
