@@ -38,21 +38,107 @@ header {
             }
         }
     
-        .langue {
-            margin: auto 13px auto 8px;
+        .header_menu_desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            // .langues {
+            //     cursor: pointer;
+            //     position: relative;
 
-            select {
-                border: none;
-                font-size: 20px;
-            }
+            //     .ul_langues {
+            //         position: absolute;
 
-            .brazil_flag {
-                //background-image: url('../assets/icon/brazil.svg');
-                //background: green;
-            }
-    
+            //         top: 45px;
+            //         left: -19px;
+
+            //         text-decoration: none;
+            //         list-style: none;
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         align-items: baseline; 
+            //         margin: 0 !important;
+            //         padding: 0 !important;
+            //         li {
+            //             display: flex;
+            //             flex-direction: row;
+            //             justify-content: center;
+            //             align-items: center; 
+            //             margin-bottom: 5px;
+            //             transition: 0.3s ease-in-out;
+
+            //             filter: grayscale(1);
+            //             &:hover {
+            //                 filter: grayscale(0);
+            //                 font-weight: bold;
+            //             }
+            //         }
+            //     }
+            // }
+
+            // .drapeaux_langues {
+            //     width: 30px;
+            //     margin-right: 5px;
+            // }
+
+            // .mi-down {
+            //     color: $color_sombre;
+            //     font-size: 12px;
+            // }
+
         }
+
+        .langues {
+            cursor: pointer;
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            .ul_langues {
+                position: absolute;
+
+                top: 45px;
+                left: -19px;
+
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: baseline; 
+                margin: 0 !important;
+                padding: 0 !important;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center; 
+                    margin-bottom: 5px;
+                    transition: 0.3s ease-in-out;
+
+                    filter: grayscale(1);
+                    &:hover {
+                        filter: grayscale(0);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .drapeaux_langues {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .mi-down {
+            color: $color_sombre;
+            font-size: 12px;
+        }
+
+        
     
         .contact {
             font-family: "Poppins", semi-bold;
@@ -65,6 +151,8 @@ header {
             background: $color_second;
             padding: 9px 18px;
             border-radius: 5px;  
+
+            margin-left: 8px;
             
             text-align: left;
             animation-delay: 1s;
