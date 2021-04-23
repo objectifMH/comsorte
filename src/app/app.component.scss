@@ -1113,8 +1113,16 @@ footer {
 
 .mention_legale {
 
-    padding: 50px 25px;
-    border-radius: 8px;
+    .mi-close {
+        color: $color_sombre;
+        position: absolute;
+
+        top: 0;
+        right: 0;
+        font-size: 24px;
+        color: red;
+        z-index: 100;
+    }
     
     .modal-body {
         width: 90vw;
@@ -1122,6 +1130,9 @@ footer {
         transform: translateX(-50%);
         background: #fef9f2;
         color: $color_sombre;
+
+        padding: 50px 35px;
+        border-radius: 8px;
 
         h3 {
             font-family: "Lora", Bold !important;
