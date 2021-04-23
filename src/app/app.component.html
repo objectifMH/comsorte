@@ -11,27 +11,27 @@
     <!--  Menu Desktop  -->
     <ul class="ul_menu header_menu_desktop" data-aos="fade-left" data-aos-duration="3000">
       <li>
-        <a  [routerLink]="['/main']" fragment="id_haut">
+        <a [routerLink]="['/main']" fragment="id_haut">
           Accueil
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_apropos">
+        <a [routerLink]="['/main']" fragment="id_apropos">
           À propos
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_anais">
+        <a [routerLink]="['/main']" fragment="id_anais">
           Votre formatrice
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_bas">
+        <a [routerLink]="['/main']" fragment="id_bas">
           Témoignages
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_faq">
+        <a [routerLink]="['/main']" fragment="id_faq">
           FAQ
         </a>
       </li>
@@ -47,24 +47,25 @@
       </li>
       <li class="langues">
         <span class="lang_active" (click)="showDrapeauxLangues(langue)">
-          
+
           <img src={{srcLangue}} title="français" class="drapeaux_langues"> {{langue | titlecase}}
-          <span class="material-icons mi-down" [ngClass]="{'hide': isShowDrapeauxLangues , 'show' : !isShowDrapeauxLangues}">
+          <span class="material-icons mi-down"
+            [ngClass]="{'hide': isShowDrapeauxLangues , 'show' : !isShowDrapeauxLangues}">
             keyboard_arrow_down
-          </span> 
+          </span>
         </span>
         <ul class="ul_langues" [ngClass]="{'cacher': !isShowDrapeauxLangues , 'montrer' : isShowDrapeauxLangues}">
           <li *ngIf="langue !== 'fr' " (click)="showDrapeauxLangues('fr')">
-            <img src="assets/icon/france.svg" title="français" class="drapeaux_langues" > Fr 
+            <img src="assets/icon/france.svg" title="français" class="drapeaux_langues"> Fr
           </li>
           <li *ngIf="langue != 'br' " (click)="showDrapeauxLangues('br')">
-            <img src="assets/icon/brazil.svg" title="bresil" class="drapeaux_langues" > Br
+            <img src="assets/icon/brazil.svg" title="bresil" class="drapeaux_langues"> Br
           </li>
           <li *ngIf="langue != 'en' " (click)="showDrapeauxLangues('en')">
-            <img src="assets/icon/england.svg" title="anglais" class="drapeaux_langues" > En
+            <img src="assets/icon/england.svg" title="anglais" class="drapeaux_langues"> En
           </li>
           <li *ngIf="langue != 'es' " (click)="showDrapeauxLangues('es')">
-            <img src="assets/icon/paraguay.svg" title="espagnol" class="drapeaux_langues" > Es
+            <img src="assets/icon/paraguay.svg" title="espagnol" class="drapeaux_langues"> Es
           </li>
         </ul>
       </li>
@@ -74,28 +75,29 @@
     <!-- Menu Mobile  -->
     <ul class="ul_menu header_menu_mobile" data-aos="fade-left" data-aos-duration="3000">
       <li class="langues">
-        
+
         <span class="lang_active" (click)="showDrapeauxLangues(langue)">
-          
+
           <img src={{srcLangue}} title="français" class="drapeaux_langues"> {{langue | titlecase}}
-          <span class="material-icons mi-down" [ngClass]="{'hide': isShowDrapeauxLangues , 'show' : !isShowDrapeauxLangues}">
+          <span class="material-icons mi-down"
+            [ngClass]="{'hide': isShowDrapeauxLangues , 'show' : !isShowDrapeauxLangues}">
             keyboard_arrow_down
-          </span> 
+          </span>
         </span>
         <ul class="ul_langues" [ngClass]="{'cacher': !isShowDrapeauxLangues , 'montrer' : isShowDrapeauxLangues}">
           <li *ngIf="langue !== 'fr' " (click)="showDrapeauxLangues('fr')">
-            <img src="assets/icon/france.svg" title="français" class="drapeaux_langues" > Fr 
+            <img src="assets/icon/france.svg" title="français" class="drapeaux_langues"> Fr
           </li>
           <li *ngIf="langue != 'br' " (click)="showDrapeauxLangues('br')">
-            <img src="assets/icon/brazil.svg" title="bresil" class="drapeaux_langues" > Br
+            <img src="assets/icon/brazil.svg" title="bresil" class="drapeaux_langues"> Br
           </li>
           <li *ngIf="langue != 'en' " (click)="showDrapeauxLangues('en')">
-            <img src="assets/icon/england.svg" title="anglais" class="drapeaux_langues" > En
+            <img src="assets/icon/england.svg" title="anglais" class="drapeaux_langues"> En
           </li>
           <li *ngIf="langue != 'es' " (click)="showDrapeauxLangues('es')">
-            <img src="assets/icon/paraguay.svg" title="espagnol" class="drapeaux_langues" > Es
+            <img src="assets/icon/paraguay.svg" title="espagnol" class="drapeaux_langues"> Es
           </li>
-          
+
 
         </ul>
       </li>
@@ -106,7 +108,7 @@
       </li>
     </ul>
     <!--  Fin Menu Mobile  -->
-   
+
   </nav>
 </header>
 <!-- FIN HEADER  -->
@@ -116,10 +118,22 @@
 
 
   <!-- Svg Ovale  -->
-  <svg class="ovale" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="835" viewBox="0 0 1890 835"><defs>
-    <style>.a{opacity:0.554;fill:url(#a);}</style>
-    <linearGradient id="a" x1="0.493" y1="1" x2="0.5" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fae0ba"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    </defs><path class="a" d="M945,0c521.909,0,945,186.921,945,417.5S1466.909,835,945,835,0,648.079,0,417.5,423.091,0,945,0Z"/>
+  <svg class="ovale" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890"
+    height="835" viewBox="0 0 1890 835">
+    <defs>
+      <style>
+        .a {
+          opacity: 0.554;
+          fill: url(#a);
+        }
+      </style>
+      <linearGradient id="a" x1="0.493" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fae0ba" />
+        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    <path class="a"
+      d="M945,0c521.909,0,945,186.921,945,417.5S1466.909,835,945,835,0,648.079,0,417.5,423.091,0,945,0Z" />
   </svg>
   <!-- FIN Svg Ovale  -->
 
@@ -135,22 +149,22 @@
           Enseignement de Français Langue Étrangère (FLE)
         </h1>
         <p data-aos="fade-right" data-aos-duration="2000">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod         </p>
-        
-        <a [routerLink]="['/main']" fragment="id_apropos" class="ensavoir" >
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+
+        <a [routerLink]="['/main']" fragment="id_apropos" class="ensavoir">
           En savoir plus
         </a>
       </div>
 
       <div class="enseignement_img" data-aos="fade-left" data-aos-duration="3000">
-        <img src="assets/Photos/photo1.png" >
+        <img src="assets/Photos/photo1.png">
       </div>
 
     </div>
 
 
     <div class="aqui container">
-      
+
       <div class="aqui_titre" data-aos="flip-down" data-aos-duration="3000">
         À qui l'enseignement FLE s'adresse-t-il ?
       </div>
@@ -211,28 +225,29 @@
 
 
   <!-- A propos  -->
-  <section class="apropos container" id="id_apropos"> 
+  <section class="apropos container" id="id_apropos">
     <div class="apropos_conteneur">
       <div class="apropros_titre" data-aos="fade-left" data-aos-duration="3000">
         À propos de Com'Sorte
       </div>
-      
+
       <div class="apropos_img mobile" data-aos="fade-right" data-aos-duration="3000">
-        <img src="assets/Photos/photo2.png" >
+        <img src="assets/Photos/photo2.png">
       </div>
-  
+
       <div class="apropos_txt">
         <p class="signification">
-          Com Sorte” en portugais signifie “Chanceux(se)/ qui a de la chance”. Anaïs vous accompagne de façon efficace dans l’apprentissage du FLE pour répondre au mieux à vos attentes!
+          Com Sorte” en portugais signifie “Chanceux(se)/ qui a de la chance”. Anaïs vous accompagne de façon efficace
+          dans l’apprentissage du FLE pour répondre au mieux à vos attentes!
         </p>
-  
+
         <!-- aprops items -->
         <div class="apropos_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="apropos_txt">
             <div class="apropos_p_bold">
               Une approche très humaine
@@ -242,29 +257,30 @@
             </p>
           </div>
         </div>
-  
+
         <div class="apropos_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="apropos_txt">
             <div class="apropos_p_bold">
               Cours particuliers à distance ou en présentiel
             </div>
             <p class="apropos_p">
-              Divers supports informatiques pour vos cours (Zoom, skype, whatsap etc), divers supports matériels pour vos cours en présentiel (audio, support papiers).
+              Divers supports informatiques pour vos cours (Zoom, skype, whatsap etc), divers supports matériels pour
+              vos cours en présentiel (audio, support papiers).
             </p>
           </div>
         </div>
-  
+
         <div class="apropos_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="apropos_txt">
             <div class="apropos_p_bold">
               Un programme personnalisé
@@ -276,20 +292,20 @@
         </div>
       </div>
     </div>
-    
+
     <div class="apropos_img desktop" data-aos="fade-right" data-aos-duration="3000">
-      <img src="assets/Photos/photo2.png" >
+      <img src="assets/Photos/photo2.png">
     </div>
     <!-- Fin aprops items -->
-  
+
   </section>
   <!-- Fin A Propos  -->
 
   <!-- Anais  -->
-  <section class="anais container" id="id_anais"> 
+  <section class="anais container" id="id_anais">
 
     <div class="anais_img desktop" data-aos="fade-left" data-aos-duration="3000">
-      <img src="assets/Photos/photo3.png" >
+      <img src="assets/Photos/photo3.png">
     </div>
 
     <div class="anais_conteneur">
@@ -297,59 +313,61 @@
       <div class="anais_titre" data-aos="fade-right" data-aos-duration="3000">
         Anaïs, votre formatrice de Français
       </div>
-      
+
       <div class="anais_img mobile" data-aos="fade-left" data-aos-duration="3000">
-        <img src="assets/Photos/photo3.png" >
+        <img src="assets/Photos/photo3.png">
       </div>
-  
+
       <div class="anais_txt">
         <p class="comsorte">
-          Com’sorte est une autoentreprise fondée et gérée par Anaïs Silvie. Ayant vécu près de 15 ans à l’étranger dans les continents de l’Afrique et de l’Amérique du Sud, Anais a grandi submergée par de nouvelles langues et de nouvelles cultures, le français étant sa langue maternelle.
+          Com’sorte est une autoentreprise fondée et gérée par Anaïs Silvie. Ayant vécu près de 15 ans à l’étranger dans
+          les continents de l’Afrique et de l’Amérique du Sud, Anais a grandi submergée par de nouvelles langues et de
+          nouvelles cultures, le français étant sa langue maternelle.
         </p>
-  
+
         <!-- anais items -->
         <div class="anais_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="anais_txt">
             <p class="anais_p">
               7 ans d’expérience dans l’enseignement des langues à des particuliers non francophones de tout âge
             </p>
           </div>
-  
+
         </div>
-  
+
         <div class="anais_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="anais_txt">
             <p class="anais_p">
               Adaptation du programme FLE selon les objectifs visés et niveaux
             </p>
           </div>
-  
+
         </div>
-  
+
         <div class="anais_item">
-  
-          <span class="material-icons mi-check" >
+
+          <span class="material-icons mi-check">
             check
           </span>
-  
+
           <div class="anais_txt">
             <p class="anais_p">
               Anaïs est polyglotte et parle Anglais, Portugais, Espagnol et Français (sa langue maternelle)
             </p>
           </div>
-  
+
         </div>
-  
+
       </div>
 
     </div>
@@ -380,7 +398,7 @@
         Années à l’étranger
       </div>
       <p>
-        Bénin, Togo, Paraguay, Brésil.        
+        Bénin, Togo, Paraguay, Brésil.
       </p>
     </div>
 
@@ -405,7 +423,7 @@
     <img src="assets/icon/france.svg" data-aos="fade-right" data-aos-duration="3000" title="France">
     <img src="assets/icon/paraguay.svg" data-aos="fade-right" data-aos-duration="2000" title="Paraguay">
     <img src="assets/icon/england.svg" data-aos="fade-right" data-aos-duration="1000" title="Angleterre">
-    <img src="assets/icon/USA.svg" data-aos="fade-right" data-aos-duration="500" title="États-Unis" >
+    <img src="assets/icon/USA.svg" data-aos="fade-right" data-aos-duration="500" title="États-Unis">
   </div>
   <!-- Fin Drapeaux -->
 
@@ -503,7 +521,7 @@
               Assistance aux devoirs sur demande
             </p>
           </li>
-        </ul>        
+        </ul>
       </div>
 
       <div class="formule_item" data-aos="fade-left" data-aos-duration="2000">
@@ -553,10 +571,10 @@
     </div>
 
   </section>
-   <!-- Fin Formules et tarifs -->
+  <!-- Fin Formules et tarifs -->
 
-   <!--  Faq  -->
-   <section class="faq container" id="id_faq">
+  <!--  Faq  -->
+  <section class="faq container" id="id_faq">
 
     <div class="faq_conteneur">
       <div class="faq_titre" data-aos="fade-left" data-aos-duration="3000">
@@ -581,7 +599,9 @@
 
           <div class="panel">
             <p>
-              Le FLE est l’enseignement du français langue vivante à des non francophones, dans un but culturel, professionnel ou touristique. La formation de FLE est « l’Action de donner à quelqu’un, à un groupe, les connaissances nécessaires à l’exercice d’une activité »(Larousse), dans ce cas, le Français.
+              Le FLE est l’enseignement du français langue vivante à des non francophones, dans un but culturel,
+              professionnel ou touristique. La formation de FLE est « l’Action de donner à quelqu’un, à un groupe, les
+              connaissances nécessaires à l’exercice d’une activité »(Larousse), dans ce cas, le Français.
             </p>
           </div>
 
@@ -662,16 +682,16 @@
       <!-- Fin Faq conteneur  -->
 
       <div class="faq_img mobile">
-        <img src="assets/Photos/photo4.png" >
+        <img src="assets/Photos/photo4.png">
       </div>
     </div>
 
     <div class="faq_img desktop" data-aos="fade-right" data-aos-duration="3000">
-      <img src="assets/Photos/photo4.png" >
+      <img src="assets/Photos/photo4.png">
     </div>
 
-   </section>
-   <!--  Fin Faq  -->
+  </section>
+  <!--  Fin Faq  -->
 
 </section>
 <!-- FIN Haut  -->
@@ -680,12 +700,22 @@
 <section class="bas">
 
   <!-- Svg Ovale  -->
-  <svg class="ovale_bas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="835" viewBox="0 0 1890 835">
+  <svg class="ovale_bas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890"
+    height="835" viewBox="0 0 1890 835">
     <defs>
-    <style>.a{opacity:0.554;fill:url(#a);}</style>
-    <linearGradient id="a" x1="0.493" x2="0.5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#fae0ba"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-  </defs>
-  <path class="a" d="M945,835c521.909,0,945-186.921,945-417.5S1466.909,0,945,0,0,186.921,0,417.5,423.091,835,945,835Z"/>
+      <style>
+        .a {
+          opacity: 0.554;
+          fill: url(#a);
+        }
+      </style>
+      <linearGradient id="a" x1="0.493" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fae0ba" />
+        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    <path class="a"
+      d="M945,835c521.909,0,945-186.921,945-417.5S1466.909,0,945,0,0,186.921,0,417.5,423.091,835,945,835Z" />
   </svg>
   <!-- FIN Svg Ovale  -->
 
@@ -701,12 +731,12 @@
 
       <div class="formation_txt">
         <div class="formation_titre">
-            Besoin de former vos salariés au Français ?
+          Besoin de former vos salariés au Français ?
         </div>
         <p>
           Bénéficiez d’une remise à niveau rapide et efficace !
         </p>
-        <a [routerLink]="['/main']" fragment="id_contactez"class="contacter">
+        <a [routerLink]="['/main']" fragment="id_contactez" class="contacter">
           Contactez Anaïs
         </a>
       </div>
@@ -720,16 +750,16 @@
     </div>
 
     <div id="id_contactez">
-      <div class="contactez container" >
+      <div class="contactez container">
 
-        <div class="contactez_titre" data-aos="fade-right" data-aos-duration="3000" >
+        <div class="contactez_titre" data-aos="fade-right" data-aos-duration="3000">
           Contactez Anais
         </div>
         <p>
           Pour toute question ou demande de souscription à une formule
         </p>
 
-        <div class="contactez_conteneur_item" >
+        <div class="contactez_conteneur_item">
           <div class="contactez_item" data-aos="fade-right" data-aos-duration="3000">
             <img src="assets/icon/pin.svg">
             <p>
@@ -767,47 +797,47 @@
   <div class="footer_conteneur footer_mobile">
     <ul class="footer_ul">
       <li>
-        <a  [routerLink]="['/main']" fragment="id_haut">
+        <a [routerLink]="['/main']" fragment="id_haut">
           Accueil
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_haut">
+        <a [routerLink]="['/main']" fragment="id_haut">
           Pour qui ?
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_apropos">
+        <a [routerLink]="['/main']" fragment="id_apropos">
           À propos
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_anais">
+        <a [routerLink]="['/main']" fragment="id_anais">
           Votre formatrice
         </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_bas">
+        <a [routerLink]="['/main']" fragment="id_bas">
           Témoignages
-        </a>     
+        </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_faq">
+        <a [routerLink]="['/main']" fragment="id_faq">
           FAQ
-        </a>      
+        </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_formules">
+        <a [routerLink]="['/main']" fragment="id_formules">
           Formules
-        </a>   
+        </a>
       </li>
       <li>
-        <a  [routerLink]="['/main']" fragment="id_contactez">
+        <a [routerLink]="['/main']" fragment="id_contactez">
           Contact
-        </a>  
+        </a>
       </li>
     </ul>
-    <a  [routerLink]="['/main']" fragment="id_haut">
+    <a [routerLink]="['/main']" fragment="id_haut">
       <img src="assets/Logo/logoblanc_comsorte.svg">
     </a>
   </div>
@@ -815,41 +845,41 @@
 
   <!--  Footer desktop  -->
   <div class="footer_conteneur footer_desktop">
-    
-    <a  [routerLink]="['/main']" fragment="id_haut"> 
+
+    <a [routerLink]="['/main']" fragment="id_haut">
       <img src="assets/Logo/logoblanc_comsorte.svg" class="footer_img_desktop">
     </a>
     <ul class="footer_ul">
       <li>
         <p>
-          <a  [routerLink]="['/main']" fragment="id_haut">
+          <a [routerLink]="['/main']" fragment="id_haut">
             Accueil
           </a>
         </p>
         <p>
-          <a  [routerLink]="['/main']" fragment="id_haut">
+          <a [routerLink]="['/main']" fragment="id_haut">
             Pour qui ?
           </a>
         </p>
         <p>
-          <a  [routerLink]="['/main']" fragment="id_apropos">
+          <a [routerLink]="['/main']" fragment="id_apropos">
             À propos
           </a>
-        </p>  
+        </p>
       </li>
       <li>
-        <p>  
-          <a  [routerLink]="['/main']" fragment="id_anais">
+        <p>
+          <a [routerLink]="['/main']" fragment="id_anais">
             Votre formatrice
           </a>
         </p>
         <p>
-          <a  [routerLink]="['/main']" fragment="id_bas">
+          <a [routerLink]="['/main']" fragment="id_bas">
             Témoignages
           </a>
         </p>
         <p>
-          <a  [routerLink]="['/main']" fragment="id_faq">
+          <a [routerLink]="['/main']" fragment="id_faq">
             FAQ
           </a>
         </p>
@@ -866,18 +896,159 @@
           </a>
         </p>
       </li>
-     
+
     </ul>
 
 
   </div>
   <!--  Fin footer desktop  -->
 
-  
+
   <div class="mentions ">
-    <span>Mentions légales</span>
+    <span class="mentions_legales_modal" data-toggle="modal" data-target="#myModal">Mentions légales</span>
     <span>Politique de confidentialité</span>
   </div>
 
 </footer>
 <!--  FIN FOOTER  -->
+
+<!-- Modal Mention légales  -->
+<div id="myModal" class="modal fade mention_legale" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Mention Légales</h4>
+      </div> -->
+      <div class="modal-body">
+
+        <div class="elementor-widget-container">
+          <div class="elementor-text-editor elementor-clearfix">
+            <h3>Mentions légales</h3>
+            <h4>Conditions d’utilisation</h4>
+            <p>Le site accessible par les URL suivantes : https://comsorte.fr est exploité dans le respect de la
+              législation française.<br>L’utilisation de ce site est régie par les présentes conditions générales. En
+              utilisant le site, vous reconnaissez<br>avoir pris connaissance de ces conditions et les avoir acceptées.
+              Celles-ci pourront êtres modifiées à tout moment<br>et sans préavis par la société COM’Sorte.<br>COM’Sorte ne
+              saurait être tenu pour responsable en aucune manière d’une mauvaise utilisation du service.</p>
+            <p></p>
+            <h4>Limitation de responsabilité</h4>
+            
+            <p>Tout contenu téléchargé se fait aux risques et périls de l’utilisateur et sous sa seule responsabilité.
+              En conséquence, COM’ON ne saurait être tenu responsable d’un quelconque dommage subi par l’ordinateur de
+              l’utilisateur ou d’une quelconque perte de données consécutives au téléchargement.</p>
+            <p>Les photos sont non contractuelles.</p>
+            <p>Les liens hypertextes mis en place dans le cadre du présent site internet en direction d’autres
+              ressources présentes sur le réseau Internet ne sauraient engager la responsabilité de COM’ON.</p>
+            <p></p>
+            <h4>Litiges &amp; Confidentialité</h4>
+            <p>Les présentes conditions sont régies par les lois françaises et toute contestation ou litiges qui
+              pourraient naître de l’interprétation ou de l’exécution de celles-ci seront de la compétence exclusive des
+              tribunaux dont dépend le siège social de la société COM’ON. La langue de référence, pour le règlement de
+              contentieux éventuels, est le français.<br>Vos données personnelles sont confidentielles et ne seront en
+              aucun cas communiquées à des tiers hormis pour la bonne exécution de la prestation.</p>
+            <p></p>
+            <h4>Propriété intellectuelle</h4>
+            <p>Tout le contenu du présent site, incluant, de façon non limitative, les graphismes, images, textes,
+              vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont la propriété exclusive
+              de la société COM'SORTE à l’exception des marques, logos ou contenus appartenant à d’autres sociétés
+              partenaires ou auteurs.</p>
+            <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même
+              partielle, de ces différents éléments est strictement interdite sans l’accord exprès par écrit de COM’ON.
+              Cette représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon
+              sanctionnée par les articles L.3335-2 et&nbsp;suivants du Code de la&nbsp; propriété intellectuelle. Le
+              non-respect de cette interdiction constitue une contrefaçon pouvant engager la responsabilité civile et
+              pénale du contrefacteur. En outre, les propriétaires des Contenus copiés&nbsp;pourraient intenter une
+              action en justice à votre encontre.</p>
+            <p>COM’ON est identiquement propriétaire des « droits des producteurs de bases de données » visés au Livre
+              III, Titre IV, du Code de la Propriété Intellectuelle (loi n° 98-536 du 1er juillet 1998) relative aux
+              droits d’auteur et aux&nbsp;bases de données.</p>
+            <p>Les utilisateurs et visiteurs du site internet peuvent mettre en place un hyperlien en direction de ce
+              site, mais uniquement en direction de la page d’accueil, accessible à l’URL suivante :
+              htpps://com-on.agency à condition que ce lien s’ouvre dans une nouvelle fenêtre. En particulier un lien
+              vers une sous page (« lien profond ») est interdit, ainsi que l’ouverture du présent site au sein d’un
+              cadre (« framing »), sauf l’autorisation expresse et préalable de COM’ON.</p>
+            <p>Pour toute demande d’autorisation ou d’information, veuillez nous contacter par email :
+              contact@com-on.agency</p>
+            <p></p>
+            <h4>Hébergeur</h4>
+            <p>OVH – SAS au capital de 10 069 020 €<br>RCS Lille Métropole 424 761 419 00045<br>Code APE : 2620Z<br>N°
+              TVA : FR 22 424 761 419<br>Siège social : 2 rue Kellermann – 59100 Roubaix – France</p>
+            <p></p>
+            <h4>Conditions de service</h4>
+            <p>Ce site est proposé en langages Angular, HTML5 ,CSS3 et JavaScript pour un meilleur confort d’utilisation et un
+              graphisme plus<br>agréable, nous vous recommandons de recourir à des navigateurs modernes comme Safari,
+              Firefox, Chrome,…</p>
+            <p></p>
+            <h4>Cookies</h4>
+            <p>Le présent site n'utilise pas des cookies. Il s’agit de petits
+              fichiers<br>textes stockés sur votre disque dur afin d’enregistrer des données techniques sur votre
+              navigation. Certaines<br>parties de ce site ne peuvent être fonctionnelle sans l’acceptation de cookies.
+            </p>
+            <!-- <table>
+              <tbody>
+                <tr>
+                  <th>Nom du cookie</th>
+                  <th>Finalité</th>
+                  <th>Durée de conservation</th>
+                </tr>
+                <tr>
+                  <td>_ga<br>_gat<br>_gid</td>
+                  <td>Mesures statistiques du trafic de site</td>
+                  <td>13 mois</td>
+                </tr>
+                <tr>
+                  <td>PHPSESSID</td>
+                  <td>Cet outil permet la gestion des sessions.</td>
+                  <td>Le temps de la session</td>
+                </tr>
+                <tr>
+                  <td>SERVERID87219</td>
+                  <td>Permet la souplesse et la fiabilité du serveur.</td>
+                  <td>
+                    <p></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table> -->
+            <h4>Informations et exclusion</h4>
+            <p>COM’SORTE met en œuvre tous les moyens dont elle dispose, pour assurer une information fiable et une mise à
+              jour fiable<br>de ses sites internet. Toutefois, des erreurs ou omissions peuvent survenir. L’internaute
+              devra donc s’assurer de l’exactitude des informations auprès de COM’ON, et signaler toutes modifications
+              du site qu’il jugerait utile. COM’ON n’est en aucun cas responsable de l’utilisation faite de ces
+              informations, et de tout préjudice direct ou indirect pouvant&nbsp; en découler.</p>
+            <p></p>
+            
+            <h4>Recherche</h4>
+            <p>En outre, le renvoi sur un site internet pour compléter une information recherchée ne signifie en aucune
+              façon que COM’ON reconnaît ou accepte quelque responsabilité quant à la teneur ou à l’utilisation dudit
+              site.</p>
+            <p></p>
+            <h4>Précautions d’usage</h4>
+            <p>En outre, le renvoi sur un site internet pour compléter une information recherchée ne signifie en aucune
+              façon que COM’ON reconnaît ou accepte quelque&nbsp;responsabilité quant à la teneur ou à l’utilisation
+              dudit site.</p>
+            <p></p>
+            <h4>Responsabilité</h4>
+            <p>Aucune autre garantie n’est accordée au client, auquel incombe l’obligation de formuler clairement ses
+              besoins et le<br>devoir de s’informer. Si des informations fournies par COM’ON apparaissent inexactes, il
+              appartiendra au client de procéder lui-même à toutes vérifications de la cohérence ou de la vraisemblance
+              des résultats obtenus. COM’ON ne sera en aucune façon responsable vis à vis des tiers de l’utilisation par
+              le client des informations ou de leur absence contenues dans ses produits y compris un de ses sites
+              Internet.</p>
+            <p></p>
+            <h4>Contactez-nous</h4>
+            <p>COM’SORTE est à votre disposition pour tous vos commentaires ou suggestions. Vous pouvez nous écrire en
+              français par<br>courrier électronique à : comsorte@outlook.fr  </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+
+  </div>
+</div>

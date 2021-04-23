@@ -1102,6 +1102,64 @@ footer {
 //--  Fin footer  --
 
 
+//--  Mention légale --
+.mentions_legales_modal {
+    font-family: "Poppins" !important;
+    font-size: 12px;
+    line-height: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.mention_legale {
+
+    padding: 50px 25px;
+    border-radius: 8px;
+    
+    .modal-body {
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fef9f2;
+        color: $color_sombre;
+
+        h3 {
+            font-family: "Lora", Bold !important;
+            font-size: 46px;
+            font-weight: bold;
+            line-height: 46px;
+            padding: 5px 5px;
+            color: $color_titre;
+            text-align: center;
+
+            margin-bottom: 80px;
+        }
+
+        h4 {
+            font-family: "Lora", Bold !important;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 46px;
+            padding: 5px 5px;
+            color: $color_titre;
+            //color: whitesmoke;
+            text-align: left;
+        }
+        p {
+            font-family: "Poppins", semi-bold !important;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 28px;
+            text-align: left;
+            //color: white;
+        }
+        
+
+    }
+    
+}
+//--  Fin Mention légale  --
+
 .mobile {
     display: block ;
 }
