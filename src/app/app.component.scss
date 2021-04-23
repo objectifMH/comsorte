@@ -28,13 +28,13 @@ header {
         align-items: center;
         background: white;
 
-        width: 85%;
+        //width: 85%;
         height: 90px;
 
 
         .logo {
             img {  
-                width: 150px;
+                width: 130px;
             }
         }
 
@@ -145,7 +145,7 @@ header {
 
         .contact {
             font-family: "Poppins", semi-bold;
-            font-size: 16px;
+            font-size: 12px;
             font-weight: 600;
             line-height: 25px;
 
@@ -1120,8 +1120,9 @@ footer {
         top: 0;
         right: 0;
         font-size: 24px;
-        color: red;
+        color: $color_sombre;
         z-index: 100;
+        opacity: 1;
     }
     
     .modal-body {
