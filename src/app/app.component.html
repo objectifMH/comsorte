@@ -3,13 +3,13 @@
   <nav class="container nav_header">
 
     <!-- Logo  -->
-    <a [routerLink]="['/main']" fragment="id_haut" class="logo" data-aos="fade-right" data-aos-duration="3000">
+    <a [routerLink]="['/main']" fragment="id_haut" class="logo" data-aos="fade-right" data-aos-duration="4000">
       <img src="assets/Logo/logocomsorte@2x.png">
     </a>
     <!--  Fin Logo  -->
 
     <!--  Menu Desktop  -->
-    <ul class="ul_menu header_menu_desktop" data-aos="fade-left" data-aos-duration="3000">
+    <ul class="ul_menu header_menu_desktop" >
       <li>
         <a [routerLink]="['/main']" fragment="id_haut">
           Accueil
@@ -35,17 +35,17 @@
           FAQ
         </a>
       </li>
-      <li>
-        <a [routerLink]="['/main']" fragment="id_formules" class="formules">
+      <li data-aos="fade-left" data-aos-duration="2000">
+        <a [routerLink]="['/main']" fragment="id_formules" class="formules" >
           Formules
         </a>
       </li>
-      <li>
+      <li data-aos="fade-left" data-aos-duration="3000">
         <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
           Contact
         </a>
       </li>
-      <li class="langues">
+      <li class="langues" data-aos="fade-left" data-aos-duration="4000">
         <span class="lang_active" (click)="showDrapeauxLangues(langue)">
 
           <img src={{srcLangue}} title="français" class="drapeaux_langues"> {{langue | titlecase}}
@@ -73,7 +73,7 @@
     <!--  Fin Menu Desktop  -->
 
     <!-- Menu Mobile  -->
-    <ul class="ul_menu header_menu_mobile" data-aos="fade-left" data-aos-duration="3000">
+    <ul class="ul_menu header_menu_mobile" data-aos="fade-left" data-aos-duration="7000">
       <li class="langues">
 
         <span class="lang_active" (click)="showDrapeauxLangues(langue)">
@@ -156,7 +156,7 @@
         </a>
       </div>
 
-      <div class="enseignement_img" data-aos="fade-left" data-aos-duration="3000">
+      <div class="enseignement_img" data-aos="fade-left" data-aos-duration="5000">
         <img src="assets/Photos/photo1.png">
       </div>
 
@@ -171,50 +171,50 @@
 
       <div class="aqui_conteneur_item">
 
-        <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="3000">
-          <img class="entreprise_img" src="assets/icon/entreprises_icon.svg">
-          <h4>
+        <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="1000">
+          <img class="entreprise_img" src="assets/icon/entreprises_icon.svg" data-aos="zoom-in-right" data-aos-duration="2000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="3000">
             Entreprises
           </h4>
-          <p>
+          <p data-aos="zoom-in-right" data-aos-duration="4000">
             Enseignement pour vos salariés? Remises à niveau de vos salariés?
           </p>
         </div>
 
-        <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="3000">
-          <img class="particuliers_img" src="assets/icon/particulier_icon.svg">
-          <h4>
+        <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="2000">
+          <img class="particuliers_img" src="assets/icon/particulier_icon.svg" data-aos="zoom-in-right" data-aos-duration="3000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="4000">
             Particuliers
           </h4>
-          <p>
+          <p data-aos="zoom-in-right" data-aos-duration="5000">
             Découverte culturelle? <br>
             Étudiants? Remise à niveau pour objectif personnel?
           </p>
         </div>
 
         <div class="aqui_item" data-aos="zoom-in-left" data-aos-duration="3000">
-          <img class="expatries_img" src="assets/icon/expatries_icon.svg">
-          <h4>
+          <img class="expatries_img" src="assets/icon/expatries_icon.svg"  data-aos="zoom-in-right" data-aos-duration="4000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="5000">
             Expatriés
           </h4>
-          <p>
+          <p data-aos="zoom-in-right" data-aos-duration="6000">
             Expatriés venus travailler en France? Conjoint Partenaires d'expatriés? Insertion sociale/culturelle?
           </p>
         </div>
 
-        <div class="aqui_item" data-aos="zoom-in-left" data-aos-duration="3000">
-          <img class="organismes_img" src="assets/icon/organisme_icon.svg">
-          <h4>
+        <div class="aqui_item" data-aos="zoom-in-left" data-aos-duration="4000">
+          <img class="organismes_img" src="assets/icon/organisme_icon.svg" data-aos="zoom-in-right" data-aos-duration="5000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="6000">
             Organismes
           </h4>
-          <p>
+          <p data-aos="zoom-in-right" data-aos-duration="7000">
             Vous êtes un organisme de formation? Organisme de langue à la recherche d'une formatrice indépendante?
           </p>
         </div>
 
       </div>
 
-      <a [routerLink]="['/main']" fragment="id_contactez" class="caminteresse">
+      <a [routerLink]="['/main']" fragment="id_contactez " class="caminteresse">
         Ça m'intéresse
       </a>
 
@@ -249,7 +249,7 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold">
+            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
               Une approche très humaine
             </div>
             <p class="apropos_p">
@@ -265,7 +265,7 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold">
+            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
               Cours particuliers à distance ou en présentiel
             </div>
             <p class="apropos_p">
@@ -282,7 +282,7 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold">
+            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
               Un programme personnalisé
             </div>
             <p class="apropos_p">
