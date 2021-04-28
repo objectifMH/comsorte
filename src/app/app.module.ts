@@ -21,6 +21,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    
 
     // ngx-translate and the loader module
     HttpClientModule,
@@ -39,5 +40,5 @@ export class AppModule { }
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
+  return new TranslateHttpLoader(http , '../../assets/i18n/', '.json');
 }
