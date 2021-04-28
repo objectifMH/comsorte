@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -36,7 +37,9 @@ export class AppComponent {
 
 
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private translate: TranslateService) {
+    translate.setDefaultLang('fr');
+   }
 
 
   ngOnInit() {
@@ -48,6 +51,9 @@ export class AppComponent {
 
   showDrapeauxLangues(lang) {
     this.langue = lang;
+
+    console.log(lang);
+    this.translate.setDefaultLang(lang);
     this.langues.forEach(lg => {
       if (lg.pays === lang) {
         this.srcLangue = "assets/icon/" + lg.src;
@@ -56,5 +62,7 @@ export class AppComponent {
     this.isShowDrapeauxLangues = !this.isShowDrapeauxLangues;
     
   }
+
+  
 
 }

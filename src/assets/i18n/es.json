@@ -1,0 +1,20 @@
+{
+    "menu":{
+        "ul_menu":{
+            "a":{
+                "accueil": "La casa",
+                "apropos": "apopa",
+                "formatrice": "La foarmacion",
+                "temoignage": "testimonia",
+                "faq": "FAQ",
+                "formules": "formulas",
+                "Contact": "Contacto"
+            }
+        }
+    },
+    "enseignement": {
+        "enseignement_txt": {
+            "h1": "Enseñanza del francés como lengua extranjera (FLE)"
+        }
+    }
+}

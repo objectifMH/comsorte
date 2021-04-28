@@ -9,39 +9,42 @@
     <!--  Fin Logo  -->
 
     <!--  Menu Desktop  -->
-    <ul class="ul_menu header_menu_desktop" >
+    <ul class="ul_menu header_menu_desktop">
       <li>
-        <a [routerLink]="['/main']" fragment="id_haut">
-          Accueil
+        <a [routerLink]="['/main']" fragment="id_haut" [innerHTML]="'menu.ul_menu.a.accueil' | translate">
+          <!-- Accueil -->
+
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_apropos">
+        <a [routerLink]="['/main']" fragment="id_apropos" [innerHTML]="'menu.ul_menu.a.apropos' | translate">
           À propos
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_anais">
+        <a [routerLink]="['/main']" fragment="id_anais" [innerHTML]="'menu.ul_menu.a.formatrice' | translate">
           Votre formatrice
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_bas">
+        <a [routerLink]="['/main']" fragment="id_bas" [innerHTML]="'menu.ul_menu.a.temoignage' | translate">
           Témoignages
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_faq">
+        <a [routerLink]="['/main']" fragment="id_faq" [innerHTML]="'menu.ul_menu.a.faq' | translate">
           FAQ
         </a>
       </li>
       <li data-aos="fade-left" data-aos-duration="2000">
-        <a [routerLink]="['/main']" fragment="id_formules" class="formules" >
+        <a [routerLink]="['/main']" fragment="id_formules" class="formules"
+          [innerHTML]="'menu.ul_menu.a.formules' | translate">
           Formules
         </a>
       </li>
       <li data-aos="fade-left" data-aos-duration="3000">
-        <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+        <a [routerLink]="['/main']" fragment="id_contactez" class="contact"
+          [innerHTML]="'menu.ul_menu.a.contact' | translate">
           Contact
         </a>
       </li>
@@ -75,9 +78,7 @@
     <!-- Menu Mobile  -->
     <ul class="ul_menu header_menu_mobile" data-aos="fade-left" data-aos-duration="7000">
       <li class="langues">
-
         <span class="lang_active" (click)="showDrapeauxLangues(langue)">
-
           <img src={{srcLangue}} title="français" class="drapeaux_langues"> {{langue | titlecase}}
           <span class="material-icons mi-down"
             [ngClass]="{'hide': isShowDrapeauxLangues , 'show' : !isShowDrapeauxLangues}">
@@ -102,7 +103,8 @@
         </ul>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+        <a  [routerLink]="['/main']" fragment="id_contactez" class="contact"
+            [innerHTML]="'menu.ul_menu.a.contact' | translate">
           Contact
         </a>
       </li>
@@ -145,13 +147,17 @@
     <div class="enseignement container">
 
       <div class="enseignement_txt">
-        <h1 class="enseignement_titre" data-aos="fade-right" data-aos-duration="3000">
-          Enseignement de Français Langue Étrangère (FLE)
+        <h1 class="enseignement_titre" data-aos="fade-right" data-aos-duration="3000"
+          [innerHTML]="'enseignement.enseignement_txt.h1' | translate">
+          <!-- Enseignement de Français Langue Étrangère (FLE) -->
         </h1>
-        <p data-aos="fade-right" data-aos-duration="2000">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+        <p  data-aos="fade-right" data-aos-duration="2000"
+            [innerHTML]="'enseignement.enseignement_txt.p' | translate">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+        </p>
 
-        <a [routerLink]="['/main']" fragment="id_apropos" class="ensavoir">
+        <a  [routerLink]="['/main']" fragment="id_apropos" class="ensavoir"
+            [innerHTML]="'enseignement.enseignement_txt.a' | translate">
           En savoir plus
         </a>
       </div>
@@ -165,56 +171,70 @@
 
     <div class="aqui container" id="id_aqui">
 
-      <div class="aqui_titre" data-aos="flip-down" data-aos-duration="3000">
+      <div  class="aqui_titre" data-aos="flip-down" data-aos-duration="3000"
+            [innerHTML]="'aqui.aqui_titre' | translate">
         À qui l'enseignement FLE s'adresse-t-il ?
       </div>
 
       <div class="aqui_conteneur_item">
 
         <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="1000">
-          <img class="entreprise_img" src="assets/icon/entreprises_icon.svg" data-aos="zoom-in-right" data-aos-duration="2000">
-          <h4 data-aos="zoom-in-right" data-aos-duration="3000">
+          <img class="entreprise_img" src="assets/icon/entreprises_icon.svg" data-aos="zoom-in-right"
+            data-aos-duration="2000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="3000"
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.1.h4' | translate">
             Entreprises
           </h4>
-          <p data-aos="zoom-in-right" data-aos-duration="4000">
+          <p  data-aos="zoom-in-right" data-aos-duration="4000"
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.1.p' | translate">
             Enseignement pour vos salariés? Remises à niveau de vos salariés?
           </p>
         </div>
 
         <div class="aqui_item" data-aos="zoom-in-right" data-aos-duration="2000">
-          <img class="particuliers_img" src="assets/icon/particulier_icon.svg" data-aos="zoom-in-right" data-aos-duration="3000">
-          <h4 data-aos="zoom-in-right" data-aos-duration="4000">
+          <img class="particuliers_img" src="assets/icon/particulier_icon.svg" data-aos="zoom-in-right"
+            data-aos-duration="3000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="4000"
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.2.h4' | translate">
             Particuliers
           </h4>
-          <p data-aos="zoom-in-right" data-aos-duration="5000">
+          <p  data-aos="zoom-in-right" data-aos-duration="5000" 
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.2.p' | translate">
             Découverte culturelle? <br>
             Étudiants? Remise à niveau pour objectif personnel?
           </p>
         </div>
 
         <div class="aqui_item" data-aos="zoom-in-left" data-aos-duration="3000">
-          <img class="expatries_img" src="assets/icon/expatries_icon.svg"  data-aos="zoom-in-right" data-aos-duration="4000">
-          <h4 data-aos="zoom-in-right" data-aos-duration="5000">
+          <img class="expatries_img" src="assets/icon/expatries_icon.svg" data-aos="zoom-in-right"
+            data-aos-duration="4000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="5000" 
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.3.h4' | translate">
             Expatriés
           </h4>
-          <p data-aos="zoom-in-right" data-aos-duration="6000">
+          <p  data-aos="zoom-in-right" data-aos-duration="6000" 
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.3.p' | translate">
             Expatriés venus travailler en France? Conjoint Partenaires d'expatriés? Insertion sociale/culturelle?
           </p>
         </div>
 
         <div class="aqui_item" data-aos="zoom-in-left" data-aos-duration="4000">
-          <img class="organismes_img" src="assets/icon/organisme_icon.svg" data-aos="zoom-in-right" data-aos-duration="5000">
-          <h4 data-aos="zoom-in-right" data-aos-duration="6000">
+          <img class="organismes_img" src="assets/icon/organisme_icon.svg" data-aos="zoom-in-right"
+            data-aos-duration="5000">
+          <h4 data-aos="zoom-in-right" data-aos-duration="6000" 
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.4.h4' | translate">
             Organismes
           </h4>
-          <p data-aos="zoom-in-right" data-aos-duration="7000">
+          <p  data-aos="zoom-in-right" data-aos-duration="7000" 
+              [innerHTML]="'aqui.aqui_conteneur_item.aqui_item.4.p' | translate">
             Vous êtes un organisme de formation? Organisme de langue à la recherche d'une formatrice indépendante?
           </p>
         </div>
 
       </div>
 
-      <a [routerLink]="['/main']" fragment="id_contactez " class="caminteresse">
+      <a  [routerLink]="['/main']" fragment="id_contactez " class="caminteresse" 
+          [innerHTML]="'aqui.a' | translate">
         Ça m'intéresse
       </a>
 
@@ -227,7 +247,8 @@
   <!-- A propos  -->
   <section class="apropos container" id="id_apropos">
     <div class="apropos_conteneur">
-      <div class="apropros_titre" data-aos="fade-left" data-aos-duration="3000">
+      <div  class="apropros_titre" data-aos="fade-left" data-aos-duration="3000"
+            [innerHTML]="'apropos.apropros_titre' | translate">
         À propos de Com'Sorte
       </div>
 
@@ -236,7 +257,8 @@
       </div>
 
       <div class="apropos_txt">
-        <p class="signification">
+        <p  class="signification" 
+            [innerHTML]="'apropos.apropos_txt.p' | translate">
           Com Sorte” en portugais signifie “Chanceux(se)/ qui a de la chance”. Anaïs vous accompagne de façon efficace
           dans l’apprentissage du FLE pour répondre au mieux à vos attentes!
         </p>
@@ -249,10 +271,12 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
+            <div  class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000"
+                  [innerHTML]="'apropos.apropos_item.1.apropos_p_bold' | translate">
               Une approche très humaine
             </div>
-            <p class="apropos_p">
+            <p  class="apropos_p"
+                [innerHTML]="'apropos.apropos_item.1.apropos_p' | translate">
               Un accompagnement dans la convivialité et la bonne humeur/enthousiasme
             </p>
           </div>
@@ -265,10 +289,12 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
+            <div  class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000"
+                  [innerHTML]="'apropos.apropos_item.2.apropos_p_bold' | translate">
               Cours particuliers à distance ou en présentiel
             </div>
-            <p class="apropos_p">
+            <p  class="apropos_p" 
+                [innerHTML]="'apropos.apropos_item.2.apropos_p' | translate">
               Divers supports informatiques pour vos cours (Zoom, skype, whatsap etc), divers supports matériels pour
               vos cours en présentiel (audio, support papiers).
             </p>
@@ -282,10 +308,12 @@
           </span>
 
           <div class="apropos_txt">
-            <div class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000">
+            <div  class="apropos_p_bold" data-aos="zoom-in-left" data-aos-duration="3000"
+                  [innerHTML]="'apropos.apropos_item.3.apropos_p_bold' | translate">
               Un programme personnalisé
             </div>
-            <p class="apropos_p">
+            <p  class="apropos_p"
+                [innerHTML]="'apropos.apropos_item.3.apropos_p' | translate">
               Analyser vos besoins, vos objectifs et vous faire progresser dans un temps record est notre priorité!
             </p>
           </div>
@@ -310,7 +338,8 @@
 
     <div class="anais_conteneur">
 
-      <div class="anais_titre" data-aos="fade-right" data-aos-duration="3000">
+      <div  class="anais_titre" data-aos="fade-right" data-aos-duration="3000" 
+            [innerHTML]="'anais.anais_titre' | translate">
         Anaïs, votre formatrice de Français
       </div>
 
@@ -319,7 +348,8 @@
       </div>
 
       <div class="anais_txt">
-        <p class="comsorte">
+        <p  class="comsorte" 
+            [innerHTML]="'anais.anais_txt.p' | translate">
           Com’sorte est une autoentreprise fondée et gérée par Anaïs Silvie. Ayant vécu près de 15 ans à l’étranger dans
           les continents de l’Afrique et de l’Amérique du Sud, Anais a grandi submergée par de nouvelles langues et de
           nouvelles cultures, le français étant sa langue maternelle.
@@ -333,7 +363,8 @@
           </span>
 
           <div class="anais_txt">
-            <p class="anais_p">
+            <p  class="anais_p" 
+                [innerHTML]="'anais.anais_item.1.anais_p' | translate">
               7 ans d’expérience dans l’enseignement des langues à des particuliers non francophones de tout âge
             </p>
           </div>
@@ -347,7 +378,8 @@
           </span>
 
           <div class="anais_txt">
-            <p class="anais_p">
+            <p  class="anais_p" 
+                [innerHTML]="'anais.anais_item.2.anais_p' | translate">
               Adaptation du programme FLE selon les objectifs visés et niveaux
             </p>
           </div>
@@ -361,7 +393,8 @@
           </span>
 
           <div class="anais_txt">
-            <p class="anais_p">
+            <p  class="anais_p" 
+                [innerHTML]="'anais.anais_item.3.anais_p' | translate">
               Anaïs est polyglotte et parle Anglais, Portugais, Espagnol et Français (sa langue maternelle)
             </p>
           </div>
@@ -382,10 +415,11 @@
       <span class="chiffre_span">
         +7
       </span>
-      <div class="chiffre_titre">
+      <div  class="chiffre_titre" 
+            [innerHTML]="'chiffres.chiffres_conteneur_item.1.chiffre_titre' | translate">
         Années d’expérience
       </div>
-      <p>
+      <p [innerHTML]="'chiffres.chiffres_conteneur_item.1.p' | translate">
         Enseignement des langues à des particuliers non francophones de tout âge
       </p>
     </div>
@@ -394,10 +428,11 @@
       <span class="chiffre_span">
         +14
       </span>
-      <div class="chiffre_titre">
+      <div  class="chiffre_titre" 
+            [innerHTML]="'chiffres.chiffres_conteneur_item.2.chiffre_titre' | translate">
         Années à l’étranger
       </div>
-      <p>
+      <p [innerHTML]="'chiffres.chiffres_conteneur_item.2.p' | translate">
         Bénin, Togo, Paraguay, Brésil.
       </p>
     </div>
@@ -406,10 +441,11 @@
       <span class="chiffre_span">
         +20
       </span>
-      <div class="chiffre_titre">
+      <div  class="chiffre_titre"
+            [innerHTML]="'chiffres.chiffres_conteneur_item.3.chiffre_titre' | translate">
         Élèves
       </div>
-      <p>
+      <p [innerHTML]="'chiffres.chiffres_conteneur_item.3.p' | translate">
         De tout âges et de différentes nationalités
       </p>
     </div>
@@ -430,50 +466,54 @@
   <!-- Formules et tarifs -->
   <section class="formules container" id="id_formules">
 
-    <div class="formule_titre" data-aos="fade-right" data-aos-duration="3000">
+    <div  class="formule_titre" data-aos="fade-right" data-aos-duration="3000"
+          [innerHTML]="'formules.formule_titre' | translate">
       Formules et tarifs
     </div>
 
     <div class="formule_conteneur">
 
       <div class="formule_item" data-aos="fade-right" data-aos-duration="3000">
-        <h4>
+        <h4 [innerHTML]="'formules.formule_conteneur.formule_item.1.h4' | translate">
           Formule Particuliers
         </h4>
         <span class="formule_span_euros ind">
           35€
         </span>
-        <span class="formule_span_heure">
+        <span class="formule_span_heure" 
+              [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_span_heure' | translate">
           Par heure
         </span>
-        <span class="formule_span_categorie ind_categorie">
+        <span class="formule_span_categorie ind_categorie" 
+              [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_span_categorie' | translate">
           Individuel
         </span>
-        <div class="formule_description">
+        <div  class="formule_description"
+              [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_description' | translate">
           Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>
         </div>
         <ul class="formule_ul">
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_ul.p.1' | translate">
               1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_ul.p.2' | translate">
               En présentiel ou à distance en visio
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_ul.p.3' | translate">
               Possibilité aussi les soirs, jours fériés ou le samedi
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_ul.p.4' | translate">
               Assistance aux devoirs sur demande
             </p>
           </li>
@@ -481,43 +521,46 @@
       </div>
 
       <div class="formule_item">
-        <h4>
+        <h4 [innerHTML]="'formules.formule_conteneur.formule_item.2.h4' | translate">
           Formule Salariés
         </h4>
         <span class="formule_span_euros stag">
           35€
         </span>
-        <span class="formule_span_heure">
+        <span class="formule_span_heure"
+              [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_span_heure' | translate">
           Par heure
         </span>
-        <span class="formule_span_categorie stag_categorie">
+        <span class="formule_span_categorie stag_categorie" 
+              [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_span_categorie' | translate">
           5 stagiaires max
         </span>
-        <div class="formule_description">
+        <div  class="formule_description"
+              [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_description' | translate">
           Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>
         </div>
         <ul class="formule_ul">
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_ul.p.1' | translate">
               1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_ul.p.2' | translate">
               En présentiel ou à distance en visio
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_ul.p.3' | translate">
               Possibilité aussi les soirs, jours fériés ou le samedi
             </p>
           </li>
           <li>
             <img src="assets/icon/check.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_ul.p.4' | translate">
               Assistance aux devoirs sur demande
             </p>
           </li>
@@ -531,37 +574,40 @@
         <span class="formule_span_euros sal">
           45€
         </span>
-        <span class="formule_span_heure">
+        <span class="formule_span_heure" 
+              [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_span_heure' | translate">
           Par heure
         </span>
-        <span class="formule_span_categorie sal_categorie">
+        <span class="formule_span_categorie sal_categorie"
+              [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_span_categorie' | translate">
           8 stagiaires max
         </span>
-        <div class="formule_description">
+        <div  class="formule_description" 
+              [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_description' | translate">
           Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>
         </div>
         <ul class=" formule_ul">
           <li>
             <img src="assets/icon/check_sal.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_ul.p.1' | translate">
               1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)
             </p>
           </li>
           <li>
             <img src="assets/icon/check_sal.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_ul.p.2' | translate">
               En présentiel ou à distance en visio
             </p>
           </li>
           <li>
             <img src="assets/icon/check_sal.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_ul.p.3' | translate">
               Possibilité aussi les soirs, jours fériés ou le samedi
             </p>
           </li>
           <li>
             <img src="assets/icon/check_sal.svg">
-            <p>
+            <p [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_ul.p.4' | translate">
               Assistance aux devoirs sur demande
             </p>
           </li>
@@ -577,7 +623,8 @@
   <section class="faq container" id="id_faq">
 
     <div class="faq_conteneur">
-      <div class="faq_titre" data-aos="fade-left" data-aos-duration="3000">
+      <div  class="faq_titre" data-aos="fade-left" data-aos-duration="3000" 
+            [innerHTML]="'faq.faq_titre' | translate">
         Foire aux questions
       </div>
 
@@ -589,7 +636,7 @@
           <input type="checkbox" id="sidebar-toggle1">
 
           <div class="accordion">
-            <h5>Qu'est-ce le FLE? Qu’est-ce qu’une formation de FLE?</h5>
+            <h5 [innerHTML]="'faq.question.1.h5' | translate">Qu'est-ce le FLE? Qu’est-ce qu’une formation de FLE?</h5>
 
             <label for="sidebar-toggle1">
               <span class="material-icons icon">
@@ -598,7 +645,7 @@
           </div>
 
           <div class="panel">
-            <p>
+            <p [innerHTML]="'faq.question.1.p' | translate">
               Le FLE est l’enseignement du français langue vivante à des non francophones, dans un but culturel,
               professionnel ou touristique. La formation de FLE est « l’Action de donner à quelqu’un, à un groupe, les
               connaissances nécessaires à l’exercice d’une activité »(Larousse), dans ce cas, le Français.
@@ -613,7 +660,7 @@
           <input type="checkbox" id="sidebar-toggle2">
 
           <div class="accordion">
-            <h5>Quel est le parcours professionnel d’Anaïs ?</h5>
+            <h5 [innerHTML]="'faq.question.2.h5' | translate">Quel est le parcours professionnel d’Anaïs ?</h5>
 
             <label for="sidebar-toggle2">
               <span class="material-icons icon">
@@ -622,7 +669,7 @@
           </div>
 
           <div class="panel">
-            <p>
+            <p [innerHTML]="'faq.question.2.p' | translate">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat nam ab dolorem architecto sit
               excepturi
             </p>
@@ -636,7 +683,7 @@
           <input type="checkbox" id="sidebar-toggle3">
 
           <div class="accordion">
-            <h5>Quel type de formation de FLE propose Anaïs?</h5>
+            <h5 [innerHTML]="'faq.question.3.h5' | translate">Quel type de formation de FLE propose Anaïs?</h5>
 
             <label for="sidebar-toggle3">
               <span class="material-icons icon">
@@ -645,7 +692,7 @@
           </div>
 
           <div class="panel">
-            <p>
+            <p [innerHTML]="'faq.question.3.p' | translate">
               Lorem ipsum dolor sit amet
             </p>
           </div>
@@ -658,7 +705,7 @@
           <input type="checkbox" id="sidebar-toggle4">
 
           <div class="accordion">
-            <h5>Comment obtenir un devis?</h5>
+            <h5 [innerHTML]="'faq.question.4.h5' | translate">Comment obtenir un devis?</h5>
 
             <label for="sidebar-toggle4">
               <span class="material-icons icon">
@@ -667,7 +714,7 @@
           </div>
 
           <div class="panel">
-            <p>
+            <p [innerHTML]="'faq.question.4.p' | translate">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat nam ab dolorem architecto sit
               excepturi, fugit tempora, voluptatem ipsum cumque nulla ea commodi amet, temporibus natus error ratione
               veniam?
@@ -730,13 +777,15 @@
       <img src="assets/avis/avis2.png" class="avis_2 desktop" data-aos="zoom-out-left" data-aos-duration="2000">
 
       <div class="formation_txt">
-        <div class="formation_titre">
+        <div  class="formation_titre" 
+              [innerHTML]="'formation.formation_txt.formation_titre' | translate">
           Besoin de former vos salariés au Français ?
         </div>
-        <p>
+        <p [innerHTML]="'formation.formation_txt.p' | translate">
           Bénéficiez d’une remise à niveau rapide et efficace !
         </p>
-        <a [routerLink]="['/main']" fragment="id_contactez" class="contacter">
+        <a  [routerLink]="['/main']" fragment="id_contactez" class="contacter"
+            [innerHTML]="'formation.formation_txt.a' | translate">
           Contactez Anaïs
         </a>
       </div>
@@ -752,10 +801,11 @@
     <div id="id_contactez">
       <div class="contactez container">
 
-        <div class="contactez_titre" data-aos="fade-right" data-aos-duration="3000">
+        <div  class="contactez_titre" data-aos="fade-right" data-aos-duration="3000" 
+              [innerHTML]="'contactez.contactez_titre' | translate">
           Contactez Anais
         </div>
-        <p>
+        <p [innerHTML]="'contactez.p' | translate">
           Pour toute question ou demande de souscription à une formule
         </p>
 
@@ -797,42 +847,50 @@
   <div class="footer_conteneur footer_mobile">
     <ul class="footer_ul">
       <li>
-        <a [routerLink]="['/main']" fragment="id_haut">
+        <a  [routerLink]="['/main']" fragment="id_haut"
+            [innerHTML]="'footer.accueil' | translate">
           Accueil
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_aqui">
+        <a  [routerLink]="['/main']" fragment="id_aqui"
+            [innerHTML]="'footer.pourqui' | translate">
           Pour qui ?
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_apropos">
+        <a  [routerLink]="['/main']" fragment="id_apropos"
+            [innerHTML]="'footer.apropos' | translate">
           À propos
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_anais">
+        <a  [routerLink]="['/main']" fragment="id_anais" 
+            [innerHTML]="'footer.formatrice' | translate">
           Votre formatrice
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_bas">
+        <a  [routerLink]="['/main']" fragment="id_bas"
+            [innerHTML]="'footer.temoignages' | translate">
           Témoignages
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_faq">
+        <a  [routerLink]="['/main']" fragment="id_faq"
+            [innerHTML]="'footer.faq' | translate">
           FAQ
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_formules">
+        <a  [routerLink]="['/main']" fragment="id_formules"
+            [innerHTML]="'footer.formules' | translate">
           Formules
         </a>
       </li>
       <li>
-        <a [routerLink]="['/main']" fragment="id_contactez">
+        <a  [routerLink]="['/main']" fragment="id_contactez"
+            [innerHTML]="'footer.contact' | translate">
           Contact
         </a>
       </li>
@@ -852,46 +910,54 @@
     <ul class="footer_ul">
       <li>
         <p>
-          <a [routerLink]="['/main']" fragment="id_haut">
+          <a  [routerLink]="['/main']" fragment="id_haut"
+              [innerHTML]="'footer.accueil' | translate">
             Accueil
           </a>
         </p>
         <p>
-          <a [routerLink]="['/main']" fragment="id_aqui">
+          <a  [routerLink]="['/main']" fragment="id_aqui"
+              [innerHTML]="'footer.pourqui' | translate">
             Pour qui ?
           </a>
         </p>
         <p>
-          <a [routerLink]="['/main']" fragment="id_apropos">
+          <a  [routerLink]="['/main']" fragment="id_apropos"
+              [innerHTML]="'footer.apropos' | translate">
             À propos
           </a>
         </p>
       </li>
       <li>
         <p>
-          <a [routerLink]="['/main']" fragment="id_anais">
+          <a  [routerLink]="['/main']" fragment="id_anais"
+              [innerHTML]="'footer.formatrice' | translate">
             Votre formatrice
           </a>
         </p>
         <p>
-          <a [routerLink]="['/main']" fragment="id_bas">
+          <a  [routerLink]="['/main']" fragment="id_bas"
+              [innerHTML]="'footer.temoignages' | translate">
             Témoignages
           </a>
         </p>
         <p>
-          <a [routerLink]="['/main']" fragment="id_faq">
+          <a  [routerLink]="['/main']" fragment="id_faq"
+              [innerHTML]="'footer.faq' | translate">
             FAQ
           </a>
         </p>
       </li>
       <li>
         <p>
-          <a [routerLink]="['/main']" fragment="id_formules" class="formules">
+          <a  [routerLink]="['/main']" fragment="id_formules" class="formules"
+              [innerHTML]="'footer.formules' | translate">
             Formules
           </a>
         </p>
         <p>
-          <a [routerLink]="['/main']" fragment="id_contactez" class="contact">
+          <a  [routerLink]="['/main']" fragment="id_contactez" class="contact"
+              [innerHTML]="'footer.contact' | translate">
             Contact
           </a>
         </p>
@@ -905,8 +971,14 @@
 
 
   <div class="mentions ">
-    <span class="mentions_legales_modal" data-toggle="modal" data-target="#myModal">Mentions légales</span>
-    <span>Politique de confidentialité</span>
+    <span class="mentions_legales_modal" data-toggle="modal" data-target="#myModal"
+          [innerHTML]="'mentions.mentions_legales_modal' | translate">
+          Mentions légales
+      </span>
+    <span class="politique" 
+          [innerHTML]="'mentions.politique' | translate">
+      Politique de confidentialité
+    </span>
   </div>
 
 </footer>

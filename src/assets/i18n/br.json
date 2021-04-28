@@ -1,0 +1,28 @@
+{
+    "menu":{
+        "ul_menu":{
+            "a":{
+                "accueil": "AccueilBr",
+                "apropos": "À proposBr",
+                "formatrice": "Votre formatriceBr",
+                "temoignage": "TémoignagesBr",
+                "faq": "FAQBr",
+                "formules": "FormulesBr",
+                "contact": "ContactBr"
+            }
+        }
+    },
+    
+    "landing":{
+        "h3": "Votre formation de <span class='fle'>FLE</span> adaptée à vos besoins",
+        "span": "FLE",
+        "p": "<strong>Lorem en fr</strong> ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio quis dignissimos sint velit."
+    },
+
+    "titre":{
+        "span":{
+            "1":".Présentation",
+            "2":".Objectifs"
+        }
+    }
+}

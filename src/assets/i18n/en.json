@@ -1,0 +1,20 @@
+{
+    "menu":{
+        "ul_menu":{
+            "a":{
+                "accueil": "Home",
+                "apropos": "About ",
+                "formatrice": "Teacher",
+                "temoignage": "Testimonial",
+                "faq": "FAQ",
+                "formules": "Formules",
+                "Contact": "Contact"
+            }
+        }
+    },
+    "enseignement": {
+        "enseignement_txt": {
+            "h1": "Teaching French as a Foreign Language (FLE)"
+        }
+    }
+}
