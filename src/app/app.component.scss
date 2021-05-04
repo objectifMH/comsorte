@@ -1638,6 +1638,7 @@ footer {
     
     animation-name: glissement;
     animation-iteration-count: 1;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards; // l'animation reste à l'état final 
   }
   @keyframes glissement {

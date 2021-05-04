@@ -14,30 +14,27 @@
     },
     "enseignement": {
         "enseignement_txt": {
-            "h1": "Enseignement de Français Langue Étrangère (FLE)",
-            "p": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+            "h1": " Formation de Français Langue Étrangère (FLE)",
+            "p": " Une formation personnalisée, accessible pour tous ",
             "a": "En savoir plus"
         }
     },
     "aqui": {
-        "aqui_titre": "À qui l'enseignement FLE s'adresse-t-il ?",
+        "aqui_titre": "À qui la formation de FLE s'adresse-t-elle ?",
         "aqui_conteneur_item": {
             "aqui_item": {
                 "1": {
                     "h4": "Entreprises",
-                    "p": "Enseignement pour vos salariés? Remises à niveau de vos salariés?"
+                    "p": « Formation pour vos salariés? Remises à niveau de vos salariés?"
                 },
                 "2": {
                     "h4": "Particuliers",
-                    "p": "Découverte culturelle? <br> Étudiants? Remise à niveau pour objectif personnel?"
-                },
-                "3": {
-                    "h4": "Expatriés",
-                    "p": "Expatriés venus travailler en France? Conjoint Partenaires d'expatriés? Insertion sociale/culturelle?"
+                    "p": "Découverte culturelle? <br> Expatriés venus travailler en France? Conjoints/Partenaires d’expatriés? Étudiants? Remise à niveau pour objectif personnel? »
+               
                 },
                 "4": {
                     "h4": "Organismes",
-                    "p": "Vous êtes un organisme de formation? Organisme de langue à la recherche d'une formatrice indépendante?"
+                    "p": "Vous êtes un organisme de formation? Organisme de langue à la recherche d'une formatrice indépendante? Demandez votre devis!« 
                 }
             }
         },
@@ -46,27 +43,29 @@
     "apropos": {
         "apropros_titre": "À propos de Com'Sorte",
         "apropos_txt": {
-            "p": " \"Com Sorte\" en portugais signifie \"Chanceux(se)/ qui a de la chance\". Anaïs vous accompagne de façon efficace dans l'apprentissage du FLE pour répondre au mieux à vos attentes!"
+            "p": " \"Com Sorte\" en portugais signifie \"Chanceux(se)/ qui a de la chance\". Je vous accompagne de façon efficace dans l'apprentissage du FLE pour répondre au mieux à vos attentes!"
         },
         "apropos_item": {
             "1": {
                 "apropos_p_bold": "Une approche très humaine",
-                "apropos_p": "Un accompagnement dans la convivialité et la bonne humeur/enthousiasme"
+                "apropos_p": « Je vous propose un accompagnement personnalisé dans la convivialité et la bonne humeur"
             },
             "2": {
-                "apropos_p_bold": "Cours particuliers à distance ou en présentiel",
-                "apropos_p": "Divers supports informatiques pour vos cours (Zoom, skype, whatsap etc), divers supports matériels pour vos cours en présentiel (audio, support papiers)."
+                "apropos_p_bold": "Session individuelle ou de goupe, à distance ou en présentiel",
+                "apropos_p": "Divers supports informatiques pour vos sessions de formation (via zoom, skype, whatsap...),
+divers supports matériels pour vos sessions en présentiel (supports audio-visuels, supports papiers)
+."
             },
             "3": {
                 "apropos_p_bold": "Un programme personnalisé",
-                "apropos_p": "Analyser vos besoins, vos objectifs et vous faire progresser dans un temps record est notre priorité!"
+                "apropos_p": "Analyser vos besoins, vos objectifs et vous faire progresser dans un temps record est ma priorité!"
             }
         }
     },
     "anais": {
         "anais_titre": "Anaïs, votre formatrice de Français",
         "anais_txt": {
-            "p": "Com’sorte est une autoentreprise fondée et gérée par Anaïs Silvie. Ayant vécu près de 15 ans à l’étranger dans les continents de l’Afrique et de l’Amérique du Sud, Anais a grandi submergée par de nouvelles langues et de nouvelles cultures, le français étant sa langue maternelle."
+            "p": « J’ai fondé l’autoentreprise Com’Sorte dans le but de transmettre l’apprentissage du FLE aux non francophones, les langues étant une passion pour moi. Ayant vécu près de 15 ans à l’étranger dans les continents de l’Afrique et de l’Amérique du Sud, j’ai grandi submergée de nouvelles langues et de nouvelles cultures, le français étant ma langue maternelle."
         },
         "anais_item": {
             "1": {
@@ -76,7 +75,7 @@
                 "anais_p": "Adaptation du programme FLE selon les objectifs visés et niveaux"
             },
             "3": {
-                "anais_p": "Anaïs est polyglotte et parle Anglais, Portugais, Espagnol et Français (sa langue maternelle)"
+                "anais_p": « Polyglotte, je maîtrise l’Anglais, le Portugais, l’Espagnol et le Français (ma langue maternelle)"
             }
         }
     },
@@ -101,14 +100,13 @@
         "formule_conteneur": {
             "formule_item": {
                 "1": {
-                    "h4": "Formule Particuliers",
-                    "formule_span_euros": "55€",
-                    "formule_span_heure": "Par heure",
+                    "h4": "Formule Particuliers", 
+                    "formule_span_heure": « Pour 3O heures »,
                     "formule_span_categorie": "Individuel",
-                    "formule_description": "Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>",
+                    "formule_description": "Pour les particuliers, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>",
                     "formule_ul": {
                         "p": {
-                            "1": "1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)",
+                            "1": « 2950 euros pour 100 heures (intensif) <br> »,
                             "2": "En présentiel ou à distance en visio",
                             "3": "Possibilité aussi les soirs, jours fériés ou le samedi",
                             "4": "Assistance aux devoirs sur demande"
@@ -116,13 +114,13 @@
                     }
                 },
                 "2": {
-                    "h4": "Formule Salariés",
-                    "formule_span_heure": "Par heure",
-                    "formule_span_categorie": "5 stagiaires max",
-                    "formule_description": "Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>",
+                    "h4": "Formule Entreprise »,
+                    "formule_span_heure": "Pour 50 heures »,
+                    "formule_span_categorie": « 4 stagiaires max",
+                    "formule_description": "Pour les salariés, <strong>Niveau A1 à C1</strong>",
                     "formule_ul": {
                         "p": {
-                            "1": "1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)",
+                            "1": « 3960 euros pour 100 heures (intensif) <br>",
                             "2": "En présentiel ou à distance en visio",
                             "3": "Possibilité aussi les soirs, jours fériés ou le samedi",
                             "4": "Assistance aux devoirs sur demande"
@@ -130,13 +128,13 @@
                     }
                 },
                 "3": {
-                    "h4": "Formule Particuliers",
-                    "formule_span_heure": "Par heure",
+                    "h4": "Formule Entreprise »,
+                    "formule_span_heure": « Pour 60 heures »,
                     "formule_span_categorie": "8 stagiaires max",
-                    "formule_description": "Pour les particulier, les étudiants ou expatriés, <strong>Niveau A1 à C1</strong>",
+                    "formule_description": "Pour les salariés, <strong>Niveau A1 à C1</strong>",
                     "formule_ul": {
                         "p": {
-                            "1": "1 à 3 heures par semaine (progressif) <br> ou 2 à 6 heures par semaine (intensif)",
+                            "1": « 4360 euros pour 110 heures (intensif) <br>",
                             "2": "En présentiel ou à distance en visio",
                             "3": "Possibilité aussi les soirs, jours fériés ou le samedi",
                             "4": "Assistance aux devoirs sur demande"
@@ -151,19 +149,21 @@
         "question": {
             "1": {
                 "h5": "Qu'est-ce le FLE? Qu’est-ce qu’une formation de FLE?",
-                "p": "Le FLE est l’enseignement du français langue vivante à des non francophones, dans un but culturel, professionnel ou touristique. La formation de FLE est « l’Action de donner à quelqu’un, à un groupe, les connaissances nécessaires à l’exercice d’une activité »(Larousse), dans ce cas, le Français."
+                "p": "Le « FLE » est l’enseignement du français langue vivante à des non francophones, dans un but culturel, professionnel ou touristique. La « formation » est « l’Action de donner à quelqu’un, à un groupe, les connaissances nécessaires à l’exercice d’une activité »(Larousse), dans ce cas, le Français."
             },
             "2": {
                 "h5": "Quel est le parcours professionnel d’Anaïs ?",
-                "p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat nam ab dolorem architecto sit excepturi"
+                "p": "Passionnée des métiers dans les domaines du relationnel et du service, j’ai exercé dans les milieux professionnels de la restauration, de l'accueil, du secrétariat et de l'assistanat tout en enseignant la langue française à un public non francophone depuis des années."
             },
             "3": {
                 "h5": "Quel type de formation de FLE propose Anaïs?",
-                "p": "Lorem ipsum dolor sit amet"
+                "p": « Je vous propose une formation basée sur l'approche actionnelle (l'approche actionnelle considère les apprenants comme « des acteurs sociaux, ayant à accomplir des tâches dans des circonstances et un environnement donnés, à l'intérieur d'un domaine d'action particulier. » source: Cadre Européen Commun de Référence). Aucun pré-requis n'est nécessaire. Selon le niveau des débutants, trois langues de support peuvent être envisagées en début de formation: l’anglais, l’espagnol et le portugais (Brésil). »
             },
             "4": {
                 "h5": "Comment obtenir un devis?",
-                "p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repellat nam ab dolorem architecto sit excepturi, fugit tempora, voluptatem ipsum cumque nulla ea commodi amet, temporibus natus error ratione veniam?"
+                "p": "Envoyez-moi un courriel détaillé à comsorte@outlook.fr en précisant le niveau de français actuel de l'apprenant(e), ses objectifs et la durée approximative de formation souhaitée.
+
+"
             }
         }
     },
@@ -175,7 +175,7 @@
         }
     },
     "contactez": {
-        "contactez_titre": "Contactez Anais",
+        "contactez_titre": "Contactez Anaïs",
         "p": "Pour toute question ou demande de souscription à une formule"
     },
     "footer":{
