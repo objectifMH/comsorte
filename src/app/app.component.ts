@@ -116,8 +116,10 @@ export class AppComponent {
       }
     })
     this.isShowDrapeauxLangues = !this.isShowDrapeauxLangues;
-
   }
+
+  // "p": " Vous êtes un organisme de formation? Organisme de langue à la recherche d'une formatrice indépendante? Demandez votre devis! " 
+
 
 
 
