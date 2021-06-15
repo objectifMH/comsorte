@@ -127,7 +127,9 @@ header {
             cursor: pointer;
             position: relative;
 
-            display: flex;
+            // remettre les langues :
+            display: none;
+            //display: flex;
             align-items: center;
 
             .ul_langues {
