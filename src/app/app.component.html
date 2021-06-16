@@ -460,6 +460,10 @@
         <h4 [innerHTML]="'formules.formule_conteneur.formule_item.1.h4' | translate">
           Formule Particuliers
         </h4>
+        <span class="formule_span_apartir"
+          [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_span_apartir' | translate">
+          à partir de
+        </span>
         <span class="formule_span_euros ind"
           [innerHTML]="'formules.formule_conteneur.formule_item.1.formule_span_euros' | translate">
           35€
@@ -513,6 +517,10 @@
         <h4 [innerHTML]="'formules.formule_conteneur.formule_item.2.h4' | translate">
           Formule Salariés
         </h4>
+        <span class="formule_span_apartir"
+          [innerHTML]="'formules.formule_conteneur.formule_item.2.formule_span_apartir' | translate">
+          à partir de
+        </span>
         <span class="formule_span_euros stag">
           35€
         </span>
@@ -560,6 +568,10 @@
         <h4>
           Formule Salariés
         </h4>
+        <span class="formule_span_apartir"
+          [innerHTML]="'formules.formule_conteneur.formule_item.3.formule_span_apartir' | translate">
+          à partir de
+        </span>
         <span class="formule_span_euros sal">
           45€
         </span>
@@ -603,6 +615,13 @@
         </ul>
       </div>
 
+    </div>
+
+    <div class="contactez_item_telephone" data-aos="flip-down" data-aos-duration="2000">
+      <img src="assets/icon/call.svg">
+      <a [innerHTML]="'contactez.telephone' | translate" href="tel:+33 (0)6 50 08 30 74">
+        +33 (0)6 50 08 30 74
+      </a>
     </div>
 
   </section>
@@ -799,23 +818,23 @@
         <div class="contactez_conteneur_item">
           <div class="contactez_item" data-aos="fade-right" data-aos-duration="3000">
             <img src="assets/icon/pin.svg">
-            <p>
+            <p [innerHTML]="'contactez.adresse' | translate">
               Montpellier , Hérault
             </p>
           </div>
 
           <div class="contactez_item" data-aos="flip-down" data-aos-duration="2000">
             <img src="assets/icon/call.svg">
-            <p>
+            <a [innerHTML]="'contactez.telephone' | translate" href="tel:+33 (0)6 50 08 30 74">
               +33 (0)6 50 08 30 74
-            </p>
+            </a>
           </div>
 
           <div class="contactez_item" data-aos="fade-left" data-aos-duration="1000">
             <img src="assets/icon/mail.svg">
-            <p>
+            <a [innerHTML]="'contactez.mail' | translate" href="mailto:comsorte@outlook.fr">
               comsorte@outlook.fr
-            </p>
+            </a>
           </div>
         </div>
       </div>
