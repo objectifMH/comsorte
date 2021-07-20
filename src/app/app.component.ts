@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import * as AOS from 'aos';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-root',
@@ -34,6 +35,31 @@ export class AppComponent {
       "src": "brazil.svg"
     }
   ];
+
+  // Carroussel 
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    autoplay: true,
+    dots: true,
+    navSpeed: 20,
+    navText: ["<span class='material-icons'>arrow_back</span>",
+      "<span class='material-icons'>arrow_forward</span>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      490: {
+        items: 1,
+      },
+      940: {
+        items: 1
+      }
+    },
+    nav: true
+  }
 
 
 

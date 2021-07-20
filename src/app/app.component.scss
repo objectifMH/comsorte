@@ -4,6 +4,8 @@
     display: none;
 }
 
+
+
 // Animation Aos 
 body[data-aos-duration='4000'] [data-aos],
 [data-aos][data-aos][data-aos-duration='4000'] {
@@ -75,51 +77,6 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-
-            // .langues {
-            //     cursor: pointer;
-            //     position: relative;
-
-            //     .ul_langues {
-            //         position: absolute;
-
-            //         top: 45px;
-            //         left: -19px;
-
-            //         text-decoration: none;
-            //         list-style: none;
-            //         display: flex;
-            //         flex-direction: column;
-            //         justify-content: center;
-            //         align-items: baseline; 
-            //         margin: 0 !important;
-            //         padding: 0 !important;
-            //         li {
-            //             display: flex;
-            //             flex-direction: row;
-            //             justify-content: center;
-            //             align-items: center; 
-            //             margin-bottom: 5px;
-            //             transition: 0.3s ease-in-out;
-
-            //             filter: grayscale(1);
-            //             &:hover {
-            //                 filter: grayscale(0);
-            //                 font-weight: bold;
-            //             }
-            //         }
-            //     }
-            // }
-
-            // .drapeaux_langues {
-            //     width: 30px;
-            //     margin-right: 5px;
-            // }
-
-            // .mi-down {
-            //     color: $color_sombre;
-            //     font-size: 12px;
-            // }
 
         }
 
@@ -771,6 +728,7 @@ header {
                     display: flex;
                     flex-direction: row;
                     align-items: baseline;
+                    margin-left: 40px;
                     
                     p {
                         font-family: "Poppins" !important;
@@ -975,10 +933,9 @@ header {
 }
 
 .bas {
-    
+
     position: relative;
     overflow-x: hidden;
-
 
     .ovale_bas {
 
@@ -1049,7 +1006,51 @@ header {
             img {
                 width:100%;
                 margin: 45px 5px;
+            }
 
+            .carousel_testimonial {
+                .testimonial {
+    
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 80px 10px 100px;  
+                       
+                    .testimonial_texte {
+
+                        font-family: "Poppins" !important;
+                        font-size: 14px;
+                        text-align: center;
+                        position: relative;
+                        padding: 30px 50px;
+                        background-color: white;
+                        color: black;
+                        background: white; //rgb(243, 208, 144);
+                        box-shadow: 1px 1px 5px rgb(1 1 1 / 45%);
+    
+                        border-radius: 13px;
+                        width: 500px;
+                        //min-height: 120px;
+                        //max-height: 120px; 
+                        
+                        p {
+                            margin-top: 10px;
+                            text-align: center;
+                            color: grey;
+                            font-size: 12px;
+                        }
+                    }
+    
+                    .testimonial_img {
+                        position:absolute; 
+                        right: 0px;
+                        bottom: -140px;
+                        border-radius: 50%;
+                        width: 120px !important;
+                        z-index: -1;
+                    }
+                }
             }
         }
 
@@ -1510,46 +1511,6 @@ footer {
         }
     }
 
-    .formation {
-        position: relative;
-        padding: 190px 28px !important;
-        .avis_1 {
-            position: absolute;
-            width: 40% !important;
-            top: 0;
-            left: 5px;
-        }
-
-        .avis_2 {
-            position: absolute;
-            width: 40% !important;
-            top: 0;
-            right: 5px;
-        }
-
-        .avis_3 {
-            position: absolute;
-            width: 35% !important;
-            bottom: 200px;
-            left: 0px;
-        }
-
-        .avis_4 {
-            position: absolute;
-            width: 35% !important;
-            bottom: 210px;
-            right: 0px;
-        }
-
-        .avis_5 {
-            position: relative;
-            width: 45% !important;
-            margin: auto !important;
-            bottom: -120px;
-        }
-
-    }
-
     .contactez {
         .contactez_conteneur_item {
             display: flex !important;
@@ -1715,3 +1676,27 @@ footer {
         opacity: 1 ;
     }
   }
+
+  // Carousel 
+
+  
+  ::ng-deep .owl-carousel .owl-nav .owl-prev {
+    background: $color_second;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+  }
+
+  ::ng-deep .owl-carousel .owl-nav .owl-next {
+    background: $color_second;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+  }
+
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $color_second;
+  }
+

@@ -779,9 +779,9 @@
 
     <div class="formation container" id="id_formation">
 
-      <img src="assets/avis/avis1.png" class="avis_1" data-aos="zoom-out-right" data-aos-duration="3000">
+      <!-- <img src="assets/avis/avis1.png" class="avis_1" data-aos="zoom-out-right" data-aos-duration="3000">
 
-      <img src="assets/avis/avis2.png" class="avis_2 desktop" data-aos="zoom-out-left" data-aos-duration="2000">
+      <img src="assets/avis/avis2.png" class="avis_2 desktop" data-aos="zoom-out-left" data-aos-duration="2000"> -->
 
       <div class="formation_txt">
         <div class="formation_titre" [innerHTML]="'formation.formation_txt.formation_titre' | translate">
@@ -796,11 +796,95 @@
         </a>
       </div>
 
-      <img src="assets/avis/avis3.png" class="avis_3" data-aos="zoom-out-right" data-aos-duration="2000">
+      <owl-carousel-o [options]="customOptions" class="carousel_testimonial">
+
+        <ng-template carouselSlide>
+          <div class="testimonial">
+            <div class="testimonial_texte">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quasi, blanditiis natus tenetur itaque
+              excepturi, dolore sunt exercitationem enim voluptas repudiandae, id deleniti iste vel molestias quisquam
+              odit debitis ad&nbsp;!
+
+              <p>
+                Patrick
+              </p>
+
+
+              <div class="testimonial_img">
+                <img src="assets/Photos/photo3.png">
+              </div>
+
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial">
+            <div class="testimonial_texte">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quasi, blanditiis natus tenetur itaque
+              excepturi, dolore sunt exercitationem enim voluptas repudiandae, id deleniti iste vel molestias quisquam
+              odit debitis ad&nbsp;!
+
+              <p>
+                Clémence
+              </p>
+
+
+              <div class="testimonial_img">
+                <img src="assets/Photos/photo3.png">
+              </div>
+
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial">
+            <div class="testimonial_texte">
+
+
+              <div class="testimonial_img">
+                <img src="assets/Photos/photo2.png">
+              </div>
+
+
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quasi, blanditiis natus tenetur
+              itaque&nbsp;!
+
+              <p>
+                Motoko
+              </p>
+
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="testimonial">
+            <div class="testimonial_texte">
+
+
+              <div class="testimonial_img">
+                <img src="assets/Photos/photo4.png">
+              </div>
+
+
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quasi, blanditiis natus tenetur itaque
+              excepturi, dolore sunt exercitationem enim voluptas repudiandae, id deleniti iste vel molestias&nbsp;!
+
+              <p>
+                Meruem
+              </p>
+
+
+            </div>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+
+
+      <!-- <img src="assets/avis/avis3.png" class="avis_3" data-aos="zoom-out-right" data-aos-duration="2000">
 
       <img src="assets/avis/avis4.png" class="avis_4 desktop" data-aos="zoom-out-left" data-aos-duration="3000">
 
-      <img src="assets/avis/avis5.png" class="avis_5 desktop" data-aos="flip-down" data-aos-duration="3000">
+      <img src="assets/avis/avis5.png" class="avis_5 desktop" data-aos="flip-down" data-aos-duration="3000"> -->
 
     </div>
 
